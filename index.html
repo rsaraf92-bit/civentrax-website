@@ -3,267 +3,721 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Civentrax — Advisory &amp; Technology Consulting | Pune, India</title>
-  <meta name="description" content="Civentrax is a Pune-based enterprise advisory firm specialising in government projects, smart cities, AI, digital transformation, infrastructure, and program management." />
-  <meta name="keywords" content="Civentrax, government consulting India, smart cities Pune, digital transformation, AI consulting, infrastructure advisory, program management, DPR, RFP" />
-  <meta property="og:title" content="Civentrax — Advisory &amp; Technology Consulting" />
-  <meta property="og:description" content="Government projects. Digital transformation. Smart cities. AI. Infrastructure. One trusted partner." />
+  <title>Civentrax — Government Advisory &amp; Technology Consulting | Pune, India</title>
+  <meta name="description" content="Civentrax is a Pune-based advisory LLP providing consultancy, technology, and program management services for government bodies, public sector, and enterprises." />
+  <meta name="keywords" content="Civentrax, government advisory India, smart cities consulting, digital transformation, GIS, IoT, AI consulting Pune, DPR preparation, bid advisory" />
+  <meta property="og:title" content="Civentrax — Government Advisory &amp; Technology Consulting" />
+  <meta property="og:description" content="Advisory. Technology. Program Management. One partner for government and enterprise." />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%236C63FF'/%3E%3Ccircle cx='16' cy='9' r='3' fill='white'/%3E%3Ccircle cx='24' cy='23' r='3' fill='white'/%3E%3Ccircle cx='8' cy='23' r='3' fill='white'/%3E%3Cline x1='16' y1='12' x2='24' y2='20' stroke='white' stroke-width='2'/%3E%3Cline x1='16' y1='12' x2='8' y2='20' stroke='white' stroke-width='2'/%3E%3Cline x1='24' y1='23' x2='8' y2='23' stroke='white' stroke-width='2'/%3E%3C/svg%3E" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='3' fill='%231B2B4B'/%3E%3Ccircle cx='16' cy='9' r='2.5' fill='%234A90A4'/%3E%3Ccircle cx='24' cy='23' r='2.5' fill='%234A90A4'/%3E%3Ccircle cx='8' cy='23' r='2.5' fill='%234A90A4'/%3E%3Cline x1='16' y1='11' x2='24' y2='21' stroke='%234A90A4' stroke-width='1.5'/%3E%3Cline x1='16' y1='11' x2='8' y2='21' stroke='%234A90A4' stroke-width='1.5'/%3E%3Cline x1='24' y1='23' x2='8' y2='23' stroke='%234A90A4' stroke-width='1.5'/%3E%3C/svg%3E" />
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Civentrax",
+    "description": "Advisory LLP providing consultancy, technology, and program management services for government, public sector, and enterprises.",
+    "email": "info@civentrax.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+
+  <!-- Fonts: Source Serif 4 (editorial display, McKinsey-register) + Inter (clean body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <style>
+    /* ── DESIGN TOKENS ───────────────────────────────────────── */
     :root {
-      --bg:        #07080F;
-      --bg-1:      #0D0F1C;
-      --bg-2:      #12152A;
-      --bg-3:      #181C35;
-      --line:      rgba(255,255,255,0.07);
-      --line-med:  rgba(255,255,255,0.13);
-      --indigo:    #6C63FF;
-      --violet:    #9B59FF;
-      --gold:      #F0B429;
-      --a-grad:    linear-gradient(135deg,#6C63FF 0%,#9B59FF 100%);
-      --a-dim:     rgba(108,99,255,0.12);
-      --a-glow:    rgba(108,99,255,0.3);
-      --white:     #EEF0FF;
-      --wdim:      rgba(238,240,255,0.52);
-      --muted:     #6B73A0;
-      --fd:        'Syne',system-ui,sans-serif;
-      --fb:        'DM Sans',system-ui,sans-serif;
-      --rsm:6px; --rmd:14px; --rlg:22px;
-      --ease:cubic-bezier(0.22,1,0.36,1);
+      /* Palette: deep navy anchor + steel blue accent + warm white ground */
+      --navy:        #1B2B4B;
+      --navy-deep:   #111D35;
+      --navy-mid:    #2C3F63;
+      --steel:       #4A90A4;
+      --steel-light: #A8CCd4;
+      --steel-dim:   rgba(74,144,164,0.1);
+      --steel-line:  rgba(74,144,164,0.22);
+      --gold:        #B8963E;
+      --gold-dim:    rgba(184,150,62,0.12);
+
+      --white:       #FFFFFF;
+      --paper:       #F7F8FA;
+      --paper-mid:   #F0F2F5;
+      --rule:        #DDE2EA;
+      --rule-dark:   #C4CDD8;
+
+      --ink:         #1B2B4B;
+      --body:        #3D4F66;
+      --muted:       #6B7A94;
+      --faint:       #9AA5B8;
+
+      --font-display: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+      --font-body:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+      --r-xs: 2px;
+      --r-sm: 4px;
+      --r-md: 8px;
+      --r-lg: 16px;
+
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      --shadow-xs: 0 1px 2px rgba(27,43,75,0.06);
+      --shadow-sm: 0 2px 8px rgba(27,43,75,0.08), 0 1px 3px rgba(27,43,75,0.05);
+      --shadow-md: 0 6px 24px rgba(27,43,75,0.1), 0 2px 8px rgba(27,43,75,0.06);
+      --shadow-lg: 0 16px 48px rgba(27,43,75,0.12), 0 4px 16px rgba(27,43,75,0.07);
     }
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-    body{background:var(--bg);color:var(--white);font-family:var(--fb);font-size:16px;line-height:1.65;overflow-x:hidden}
-    img{display:block;max-width:100%}
-    a{color:inherit;text-decoration:none}
-    button{font:inherit;cursor:pointer;border:none;background:none}
-    ::selection{background:rgba(108,99,255,0.32)}
 
-    .skip-link{position:absolute;top:-100%;left:1rem;padding:.5rem 1rem;background:var(--indigo);color:#fff;font-weight:600;border-radius:var(--rsm);z-index:1000;transition:top .2s}
-    .skip-link:focus{top:1rem}
-
-    /* NAV */
-    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(1.25rem,5vw,4rem);height:66px;background:rgba(7,8,15,.82);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--line);transition:background .3s}
-    nav.scrolled{background:rgba(7,8,15,.97)}
-    .nav-logo{display:flex;align-items:center;gap:.6rem;font-family:var(--fd);font-weight:700;font-size:1.2rem;letter-spacing:-.01em;color:var(--white)}
-    .lm{width:34px;height:34px;border-radius:9px;background:var(--a-grad);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 20px rgba(108,99,255,.4)}
-    .lm svg{width:18px;height:18px}
-    .nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
-    .nav-links a{font-size:.875rem;font-weight:400;color:var(--wdim);transition:color .2s}
-    .nav-links a:hover{color:var(--white)}
-    .nav-cta{padding:.5rem 1.25rem!important;background:var(--a-grad)!important;color:#fff!important;border-radius:var(--rsm);font-weight:600!important;box-shadow:0 4px 16px rgba(108,99,255,.35);transition:opacity .2s,transform .15s!important}
-    .nav-cta:hover{opacity:.88;transform:translateY(-1px)}
-    .nav-toggle{display:none;flex-direction:column;gap:5px;padding:6px}
-    .nav-toggle span{display:block;width:22px;height:2px;background:var(--white);border-radius:2px;transition:transform .25s,opacity .25s}
-
-    /* HERO */
-    #hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:0 clamp(1.25rem,5vw,4rem);padding-top:66px;overflow:hidden}
-    .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 55% 55% at 76% 44%,rgba(108,99,255,.14) 0%,transparent 70%),radial-gradient(ellipse 35% 40% at 15% 76%,rgba(155,89,255,.1) 0%,transparent 65%),radial-gradient(ellipse 20% 30% at 85% 80%,rgba(240,180,41,.06) 0%,transparent 60%),var(--bg)}
-    .hero-bg::after{content:'';position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:52px 52px;mask-image:radial-gradient(ellipse 65% 65% at 65% 50%,black 0%,transparent 72%)}
-    .hero-inner{position:relative;z-index:1;max-width:780px}
-    .badge{display:inline-flex;align-items:center;gap:.5rem;padding:.35rem .9rem .35rem .4rem;background:rgba(108,99,255,.14);border:1px solid rgba(108,99,255,.3);border-radius:100px;font-size:.75rem;font-weight:600;letter-spacing:.05em;color:#A99BFF;margin-bottom:1.75rem}
-    .badge-dot{width:6px;height:6px;border-radius:50%;background:var(--indigo);box-shadow:0 0 8px var(--indigo);animation:blink 2.4s ease-in-out infinite}
-    @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
-    h1{font-family:var(--fd);font-size:clamp(2.5rem,6.5vw,5rem);font-weight:800;line-height:1.06;letter-spacing:-.03em;color:var(--white);margin-bottom:1.5rem}
-    h1 em{font-style:normal;background:var(--a-grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-    .hero-sub{font-size:clamp(1rem,2vw,1.15rem);color:var(--wdim);max-width:520px;line-height:1.75;margin-bottom:2.5rem;font-weight:300}
-    .btn-group{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
-    .btn-p{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 2rem;background:var(--a-grad);color:#fff;font-weight:600;font-size:.9375rem;border-radius:var(--rsm);box-shadow:0 8px 24px rgba(108,99,255,.4);transition:opacity .2s,transform .15s var(--ease),box-shadow .2s}
-    .btn-p:hover{opacity:.88;transform:translateY(-2px);box-shadow:0 12px 32px rgba(108,99,255,.5)}
-    .btn-p.ok{background:rgba(108,99,255,.2);box-shadow:none}
-    .btn-g{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 2rem;border:1px solid var(--line-med);color:var(--wdim);font-weight:400;font-size:.9375rem;border-radius:var(--rsm);transition:border-color .2s,color .2s,transform .15s var(--ease)}
-    .btn-g:hover{border-color:var(--indigo);color:var(--white);transform:translateY(-2px)}
-
-    /* MARQUEE */
-    .mq-wrap{background:var(--bg-1);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:.9rem 0;overflow:hidden;position:relative}
-    .mq-wrap::before,.mq-wrap::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none}
-    .mq-wrap::before{left:0;background:linear-gradient(90deg,var(--bg-1),transparent)}
-    .mq-wrap::after{right:0;background:linear-gradient(-90deg,var(--bg-1),transparent)}
-    .mq-track{display:flex;width:max-content;animation:mq 30s linear infinite}
-    @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-    .mq-track:hover{animation-play-state:paused}
-    .mq-item{display:flex;align-items:center;gap:.5rem;padding:0 2.5rem;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
-    .mq-item svg{width:13px;height:13px;color:var(--indigo);flex-shrink:0}
-    .mq-sep{color:rgba(108,99,255,.3);margin:0 .25rem}
-
-    /* TRUST */
-    .trust-strip{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:2rem clamp(1.25rem,5vw,4rem);display:flex;align-items:center;justify-content:center;gap:clamp(2rem,5vw,5rem);flex-wrap:wrap}
-    .ti{display:flex;flex-direction:column;align-items:center;gap:.25rem;text-align:center}
-    .tn{font-family:var(--fd);font-size:1.9rem;font-weight:800;background:var(--a-grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}
-    .tl{font-size:.68rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
-
-    /* SECTIONS */
-    section{padding:clamp(4rem,9vw,7.5rem) clamp(1.25rem,5vw,4rem)}
-    .mx{max-width:1200px;margin:0 auto}
-    .sl{display:inline-flex;align-items:center;gap:.5rem;font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--indigo);margin-bottom:1rem}
-    .sl::before{content:'';display:block;width:20px;height:2px;background:var(--indigo);border-radius:2px}
-    h2{font-family:var(--fd);font-size:clamp(1.85rem,4vw,3rem);font-weight:700;letter-spacing:-.025em;line-height:1.15;color:var(--white);margin-bottom:1rem}
-    .slead{font-size:1.0625rem;color:var(--wdim);max-width:540px;line-height:1.75;margin-bottom:3.5rem;font-weight:300}
-
-    /* STORY */
-    #story{background:var(--bg-1);border-top:1px solid var(--line)}
-    .sg{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,6vw,6rem);align-items:start}
-    .sv{position:sticky;top:100px;aspect-ratio:4/3;border-radius:var(--rlg);overflow:hidden;background:var(--bg-2);border:1px solid var(--line)}
-    .sv svg{width:100%;height:100%}
-    .tl-wrap{display:flex;flex-direction:column;margin-top:2.5rem}
-    .tli{display:grid;grid-template-columns:52px 1fr;gap:1rem}
-    .tly{font-family:var(--fd);font-size:.68rem;font-weight:700;color:var(--indigo);padding-top:.2rem;text-align:right}
-    .tlc{padding-bottom:2.25rem;border-left:1px solid rgba(108,99,255,.2);padding-left:1.375rem;position:relative}
-    .tlc::before{content:'';position:absolute;left:-5px;top:7px;width:8px;height:8px;border-radius:50%;background:var(--indigo);border:2px solid var(--bg-1);box-shadow:0 0 8px var(--indigo)}
-    .tlc h4{font-family:var(--fd);font-size:.9375rem;font-weight:600;color:var(--white);margin-bottom:.3rem}
-    .tlc p{font-size:.875rem;color:var(--wdim);line-height:1.65}
-    .tli:last-child .tlc{padding-bottom:0;border-left-color:transparent}
-
-    /* SERVICES */
-    #services{background:var(--bg)}
-    .sg2{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--rlg);overflow:hidden}
-    .sc{background:var(--bg-1);padding:2.25rem 2rem;position:relative;overflow:hidden;transition:background .25s}
-    .sc::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(108,99,255,.07) 0%,transparent 60%);opacity:0;transition:opacity .3s}
-    .sc:hover{background:var(--bg-2)}
-    .sc:hover::after{opacity:1}
-    .ci{width:42px;height:42px;border-radius:var(--rsm);background:var(--a-dim);border:1px solid rgba(108,99,255,.2);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem}
-    .ci svg{width:20px;height:20px;color:var(--indigo)}
-    .sc h3{font-family:var(--fd);font-size:1rem;font-weight:600;color:var(--white);margin-bottom:.625rem;letter-spacing:-.01em}
-    .sc p{font-size:.875rem;color:var(--wdim);line-height:1.65}
-    .ctag{display:inline-block;margin-top:.875rem;padding:.2rem .65rem;background:var(--a-dim);border-radius:100px;font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#A99BFF}
-
-    /* CAPABILITIES */
-    #capabilities{background:var(--bg-2);border-top:1px solid var(--line)}
-    .capg{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
-    .cap{display:flex;gap:1rem;align-items:flex-start;padding:1.5rem;background:var(--bg-1);border:1px solid var(--line);border-radius:var(--rmd);transition:border-color .2s,transform .2s var(--ease)}
-    .cap:hover{border-color:rgba(108,99,255,.3);transform:translateY(-2px)}
-    .capn{font-family:var(--fd);font-size:.65rem;font-weight:800;color:var(--indigo);letter-spacing:.08em;padding-top:.1rem;flex-shrink:0;min-width:24px}
-    .cap h4{font-family:var(--fd);font-size:.9rem;font-weight:600;color:var(--white);margin-bottom:.25rem}
-    .cap p{font-size:.8125rem;color:var(--wdim);line-height:1.6}
-
-    /* WHO WE ARE */
-    #who-we-are{background:var(--bg);border-top:1px solid var(--line)}
-    .wg{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,6vw,6rem);align-items:start}
-    .plist{list-style:none;display:flex;flex-direction:column;gap:1.5rem;margin-top:2.5rem}
-    .pi{display:flex;gap:1rem}
-    .pck{width:22px;height:22px;border-radius:50%;background:var(--a-dim);border:1px solid rgba(108,99,255,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
-    .pck svg{width:11px;height:11px;color:var(--indigo)}
-    .pi h4{font-family:var(--fd);font-size:.9375rem;font-weight:600;color:var(--white);margin-bottom:.25rem}
-    .pi p{font-size:.875rem;color:var(--wdim);line-height:1.6}
-
-    /* SECTORS */
-    #sectors{background:var(--bg-1);border-top:1px solid var(--line)}
-    .srow{display:flex;flex-wrap:wrap;gap:.75rem}
-    .sp{display:flex;align-items:center;gap:.5rem;padding:.6rem 1.1rem;border:1px solid var(--line);border-radius:100px;font-size:.875rem;font-weight:400;color:var(--wdim);background:var(--bg-2);transition:border-color .2s,color .2s,background .2s;cursor:default}
-    .sp:hover{border-color:var(--indigo);color:var(--white);background:var(--a-dim)}
-    .sp svg{width:15px;height:15px;color:var(--indigo);flex-shrink:0}
-
-    /* APPROACH */
-    #approach{background:var(--bg);border-top:1px solid var(--line)}
-    .apg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
-    .apc{background:var(--bg-1);border:1px solid var(--line);border-radius:var(--rmd);padding:2rem 1.75rem;position:relative;overflow:hidden;transition:border-color .25s,transform .2s var(--ease)}
-    .apc:hover{border-color:rgba(108,99,255,.25);transform:translateY(-3px)}
-    .apn{font-family:var(--fd);font-size:.65rem;font-weight:800;letter-spacing:.12em;color:var(--indigo);margin-bottom:.875rem}
-    .apc h3{font-family:var(--fd);font-size:1rem;font-weight:600;color:var(--white);margin-bottom:.625rem}
-    .apc p{font-size:.8125rem;color:var(--wdim);line-height:1.65}
-    .apc::before{content:attr(data-n);position:absolute;bottom:-.5rem;right:1rem;font-family:var(--fd);font-size:5rem;font-weight:800;color:rgba(108,99,255,.05);line-height:1;pointer-events:none;letter-spacing:-.04em}
-
-    /* BAND */
-    .band{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(3rem,6vw,5rem) clamp(1.25rem,5vw,4rem);text-align:center}
-    .band blockquote{font-family:var(--fd);font-size:clamp(1.25rem,3vw,2.125rem);font-weight:600;letter-spacing:-.02em;color:var(--white);max-width:780px;margin:0 auto 1.5rem;line-height:1.3}
-    .band blockquote em{font-style:normal;background:var(--a-grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-    .band cite{font-size:.8125rem;color:var(--muted);letter-spacing:.08em;font-style:normal;text-transform:uppercase}
-
-    /* FAQ */
-    #faq{background:var(--bg-1);border-top:1px solid var(--line)}
-    .flist{display:flex;flex-direction:column;gap:.75rem;max-width:840px}
-    .fi{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--rmd);transition:border-color .2s}
-    .fi[open]{border-color:rgba(108,99,255,.3)}
-    .fi summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:1.25rem;padding:1.375rem 1.5rem}
-    .fi summary::-webkit-details-marker{display:none}
-    .fi summary h3{font-family:var(--fd);font-size:.9375rem;font-weight:600;color:var(--white);letter-spacing:-.01em}
-    .fic{width:20px;height:20px;flex-shrink:0;color:var(--indigo);transition:transform .25s var(--ease)}
-    .fi[open] .fic{transform:rotate(45deg)}
-    .fa{padding:0 1.5rem 1.375rem;font-size:.875rem;color:var(--wdim);line-height:1.7;max-width:680px}
-
-    /* CONTACT */
-    #contact{background:var(--bg);border-top:1px solid var(--line)}
-    .cw{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,6vw,6rem);align-items:start}
-    .cinfo p{color:var(--wdim);font-size:1rem;line-height:1.75;margin-bottom:2rem;font-weight:300}
-    .cd{display:flex;align-items:flex-start;gap:.875rem;margin-bottom:1.25rem}
-    .cd svg{width:18px;height:18px;color:var(--indigo);flex-shrink:0;margin-top:3px}
-    .cd span{font-size:.9rem;color:var(--wdim);line-height:1.5}
-    .cf{background:var(--bg-1);border:1px solid var(--line);border-radius:var(--rlg);padding:2.5rem;display:flex;flex-direction:column;gap:1.25rem}
-    .frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-    .fld{display:flex;flex-direction:column;gap:.45rem}
-    label{font-size:.8rem;font-weight:500;color:var(--wdim)}
-    input,textarea,select{background:rgba(255,255,255,.04);border:1px solid var(--line-med);border-radius:var(--rsm);padding:.75rem 1rem;color:var(--white);font:inherit;font-size:.9rem;outline:none;transition:border-color .2s,box-shadow .2s}
-    input:focus,textarea:focus,select:focus{border-color:var(--indigo);box-shadow:0 0 0 3px rgba(108,99,255,.15)}
-    input::placeholder,textarea::placeholder{color:rgba(255,255,255,.2)}
-    textarea{resize:vertical;min-height:110px}
-    select{appearance:none}
-    select option{background:var(--bg-2)}
-
-    /* FOOTER */
-    footer{background:var(--bg-1);border-top:1px solid var(--line);padding:3.5rem clamp(1.25rem,5vw,4rem) 2rem}
-    .fi2{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;max-width:1200px;margin:0 auto 3rem}
-    .fb-name{display:flex;align-items:center;gap:.6rem;font-family:var(--fd);font-size:1.1rem;font-weight:700;margin-bottom:.875rem}
-    .fb p{font-size:.875rem;color:var(--muted);line-height:1.65;max-width:270px}
-    .fc h4{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem}
-    .fc ul{list-style:none;display:flex;flex-direction:column;gap:.625rem}
-    .fc ul a{font-size:.875rem;color:var(--wdim);transition:color .2s}
-    .fc ul a:hover{color:#A99BFF}
-    .fb2{max-width:1200px;margin:0 auto;padding-top:1.5rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-    .fb2 p{font-size:.78rem;color:var(--muted)}
-    .fl{display:flex;gap:1.5rem}
-    .fl a{font-size:.78rem;color:var(--muted);transition:color .2s}
-    .fl a:hover{color:var(--white)}
-
-    /* ANIMATIONS */
-    @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
-    .fu{opacity:0;animation:fadeUp .7s var(--ease) forwards}
-    .d1{animation-delay:.1s}.d2{animation-delay:.22s}.d3{animation-delay:.36s}
-    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
-
-    /* RESPONSIVE */
-    @media(max-width:960px){
-      .sg,.wg,.cw{grid-template-columns:1fr}
-      .sv{position:static}
-      .apg{grid-template-columns:1fr 1fr}
-      .capg{grid-template-columns:1fr}
-      .fi2{grid-template-columns:1fr 1fr}
+    /* ── RESET ───────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--white);
+      color: var(--body);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.65;
+      overflow-x: hidden;
     }
-    @media(max-width:680px){
-      .nav-links{display:none}
-      .nav-links.open{display:flex;flex-direction:column;position:fixed;top:66px;left:0;right:0;background:rgba(7,8,15,.97);backdrop-filter:blur(20px);padding:2rem 1.25rem;gap:1.5rem;border-bottom:1px solid var(--line)}
-      .nav-toggle{display:flex}
-      .apg,.sg2{grid-template-columns:1fr}
-      .frow{grid-template-columns:1fr}
-      .fi2{grid-template-columns:1fr}
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; cursor: pointer; border: none; background: none; }
+
+    /* ── SKIP LINK ───────────────────────────────────────────── */
+    .skip-link {
+      position: absolute; top: -100%; left: 1rem;
+      padding: 0.5rem 1rem;
+      background: var(--steel); color: var(--white);
+      font-weight: 600; border-radius: var(--r-sm);
+      z-index: 1000; transition: top 0.2s;
     }
-    @media(max-width:480px){.btn-group{flex-direction:column;align-items:flex-start}}
-    :focus-visible{outline:2px solid var(--indigo);outline-offset:3px;border-radius:var(--rsm)}
+    .skip-link:focus { top: 1rem; }
+
+    /* ── NAV ─────────────────────────────────────────────────── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 clamp(1.5rem, 5vw, 4rem);
+      height: 68px;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--rule);
+      transition: box-shadow 0.3s;
+    }
+    nav.scrolled { box-shadow: 0 2px 12px rgba(27,43,75,0.09); }
+    .nav-logo {
+      display: flex; align-items: center; gap: 0.625rem;
+      font-family: var(--font-display);
+      font-weight: 700; font-size: 1.3rem;
+      letter-spacing: -0.01em; color: var(--navy);
+    }
+    .logo-mark {
+      width: 32px; height: 32px; border-radius: 4px;
+      background: var(--navy);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .logo-mark svg { width: 19px; height: 19px; }
+    .nav-links {
+      display: flex; align-items: center;
+      gap: 2.25rem; list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.8375rem; font-weight: 500;
+      color: var(--muted); letter-spacing: 0.01em;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--navy); }
+    .nav-cta {
+      padding: 0.5rem 1.25rem !important;
+      background: var(--navy) !important; color: var(--white) !important;
+      border-radius: var(--r-xs) !important;
+      font-weight: 600 !important; font-size: 0.8375rem !important;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--steel) !important; }
+    .nav-toggle {
+      display: none; flex-direction: column; gap: 5px; padding: 6px;
+    }
+    .nav-toggle span {
+      display: block; width: 22px; height: 2px;
+      background: var(--navy); border-radius: 1px;
+      transition: transform 0.25s, opacity 0.25s;
+    }
+
+    /* ── HERO ────────────────────────────────────────────────── */
+    #hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex; align-items: center;
+      padding: 0 clamp(1.5rem, 5vw, 4rem);
+      padding-top: 68px;
+      overflow: hidden;
+      background: var(--navy-deep);
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 50% 60% at 72% 48%, rgba(74,144,164,0.16) 0%, transparent 65%),
+        radial-gradient(ellipse 30% 40% at 12% 80%, rgba(74,144,164,0.08) 0%, transparent 55%),
+        var(--navy-deep);
+    }
+    /* Signature element: fine diagonal hatching, precision/engineering feel */
+    .hero-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: repeating-linear-gradient(
+        -60deg,
+        transparent 0px,
+        transparent 38px,
+        rgba(255,255,255,0.018) 38px,
+        rgba(255,255,255,0.018) 39px
+      );
+      pointer-events: none;
+    }
+    .hero-inner {
+      position: relative; z-index: 1;
+      max-width: 700px;
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 0.875rem;
+      font-family: var(--font-body);
+      font-size: 0.6875rem; font-weight: 600;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--steel-light);
+      margin-bottom: 1.75rem;
+    }
+    .eyebrow::before {
+      content: '';
+      display: block; width: 28px; height: 1px;
+      background: var(--steel);
+    }
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+      font-weight: 300;
+      line-height: 1.12;
+      letter-spacing: -0.015em;
+      color: var(--white);
+      margin-bottom: 1.75rem;
+    }
+    h1 strong {
+      font-weight: 700;
+      display: block;
+    }
+    h1 em {
+      font-style: italic;
+      color: var(--steel-light);
+      font-weight: 300;
+    }
+    .hero-sub {
+      font-size: 1.0625rem;
+      color: rgba(255,255,255,0.55);
+      max-width: 500px;
+      line-height: 1.8;
+      margin-bottom: 2.75rem;
+      font-weight: 300;
+    }
+    .btn-group { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.875rem 2rem;
+      background: var(--steel); color: var(--white);
+      font-weight: 600; font-size: 0.875rem;
+      border-radius: var(--r-xs); letter-spacing: 0.01em;
+      transition: background 0.2s, transform 0.15s var(--ease);
+    }
+    .btn-primary:hover { background: #3a7d93; transform: translateY(-1px); }
+    .btn-primary.is-success { background: rgba(74,144,164,0.2); }
+    .btn-primary:disabled { cursor: default; }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.875rem 2rem;
+      border: 1px solid rgba(255,255,255,0.18);
+      color: rgba(255,255,255,0.65);
+      font-weight: 400; font-size: 0.875rem;
+      border-radius: var(--r-xs);
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-ghost:hover { border-color: var(--steel-light); color: var(--white); }
+
+    /* ── MARQUEE STRIP — key services ────────────────────────── */
+    .marquee-strip {
+      background: var(--navy);
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding: 0.875rem 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .marquee-inner {
+      display: inline-flex; gap: 0;
+      animation: marquee 28s linear infinite;
+    }
+    .marquee-item {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      padding: 0 2.5rem;
+      font-size: 0.75rem; font-weight: 500;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+    }
+    .marquee-dot {
+      width: 3px; height: 3px; border-radius: 50%;
+      background: var(--steel); flex-shrink: 0;
+    }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .marquee-inner { animation: none; }
+    }
+
+    /* ── TRUST STRIP ─────────────────────────────────────────── */
+    .trust-strip {
+      background: var(--paper);
+      border-bottom: 1px solid var(--rule);
+      padding: 2.25rem clamp(1.5rem, 5vw, 4rem);
+      display: flex; align-items: center; justify-content: center;
+      gap: 0; flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex; flex-direction: column;
+      align-items: center; gap: 0.25rem;
+      text-align: center;
+      padding: 0.5rem 3rem;
+    }
+    .trust-item + .trust-item {
+      border-left: 1px solid var(--rule-dark);
+    }
+    .trust-num {
+      font-family: var(--font-display);
+      font-size: 2.25rem; font-weight: 600;
+      color: var(--navy); line-height: 1;
+    }
+    .trust-label {
+      font-size: 0.6875rem; color: var(--muted);
+      letter-spacing: 0.1em; text-transform: uppercase;
+      margin-top: 0.2rem;
+    }
+
+    /* ── SECTION BASE ────────────────────────────────────────── */
+    section { padding: clamp(5rem, 9vw, 8rem) clamp(1.5rem, 5vw, 4rem); }
+    .section-label {
+      font-size: 0.6875rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--steel); margin-bottom: 1rem;
+    }
+    h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.85rem, 3.2vw, 2.75rem);
+      font-weight: 400; letter-spacing: -0.02em;
+      line-height: 1.22; color: var(--navy);
+      margin-bottom: 1rem;
+    }
+    h2 strong { font-weight: 700; }
+    .section-lead {
+      font-size: 1.0625rem; color: var(--muted);
+      max-width: 560px; line-height: 1.8;
+      margin-bottom: 3.5rem; font-weight: 300;
+    }
+    .max-w { max-width: 1160px; margin: 0 auto; }
+
+    /* ── ABOUT / MAIN OBJECT ─────────────────────────────────── */
+    #about { background: var(--white); border-top: 1px solid var(--rule); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem, 6vw, 7rem);
+      align-items: start;
+    }
+    .about-visual {
+      position: sticky; top: 88px;
+      aspect-ratio: 4/5;
+      border-radius: var(--r-md);
+      overflow: hidden;
+      background: var(--navy);
+      box-shadow: var(--shadow-lg);
+    }
+    .about-visual svg { width: 100%; height: 100%; }
+    .about-text h2 { margin-bottom: 1.5rem; }
+    .main-object {
+      font-family: var(--font-display);
+      font-size: 1.125rem; font-weight: 400; font-style: italic;
+      color: var(--body); line-height: 1.7;
+      border-left: 3px solid var(--steel);
+      padding-left: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .about-body {
+      font-size: 0.9375rem; color: var(--muted);
+      line-height: 1.8; margin-bottom: 1.5rem;
+    }
+    .reg-note {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      font-size: 0.8rem; color: var(--faint);
+      letter-spacing: 0.04em;
+      margin-top: 1rem;
+    }
+    .reg-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--steel); flex-shrink: 0;
+    }
+
+    /* ── SERVICES ────────────────────────────────────────────── */
+    #services { background: var(--paper); border-top: 1px solid var(--rule); }
+    .services-header {
+      display: flex; justify-content: space-between;
+      align-items: flex-end; margin-bottom: 3rem;
+      gap: 2rem; flex-wrap: wrap;
+    }
+    .services-header .section-lead { margin-bottom: 0; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--rule);
+      border: 1px solid var(--rule);
+      border-radius: var(--r-md);
+      overflow: hidden;
+    }
+    .service-card {
+      background: var(--white);
+      padding: 2rem 1.75rem 1.75rem;
+      position: relative;
+      transition: background 0.2s;
+    }
+    /* Signature detail: teal top border on hover */
+    .service-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 2px; background: var(--steel);
+      transform: scaleX(0); transform-origin: left;
+      transition: transform 0.3s var(--ease);
+    }
+    .service-card:hover { background: var(--paper); }
+    .service-card:hover::before { transform: scaleX(1); }
+    .card-num {
+      font-family: var(--font-body);
+      font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.14em; color: var(--steel);
+      margin-bottom: 1rem;
+    }
+    .service-card h3 {
+      font-family: var(--font-display);
+      font-size: 1rem; font-weight: 600;
+      color: var(--navy); margin-bottom: 0.625rem;
+      line-height: 1.35;
+    }
+    .service-card p {
+      font-size: 0.8375rem; color: var(--muted); line-height: 1.7;
+    }
+
+    /* ── CAPABILITIES ────────────────────────────────────────── */
+    #capabilities { background: var(--white); border-top: 1px solid var(--rule); }
+    .cap-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem, 6vw, 7rem);
+      align-items: start;
+    }
+    .cap-list { list-style: none; display: flex; flex-direction: column; gap: 0; }
+    .cap-item {
+      display: flex; gap: 1.25rem;
+      padding: 1.375rem 0;
+      border-bottom: 1px solid var(--rule);
+      transition: background 0.15s;
+    }
+    .cap-item:first-child { border-top: 1px solid var(--rule); }
+    .cap-num {
+      font-size: 0.65rem; font-weight: 600; color: var(--steel);
+      letter-spacing: 0.12em; padding-top: 0.2rem;
+      flex-shrink: 0; width: 26px;
+    }
+    .cap-item h4 {
+      font-family: var(--font-display);
+      font-size: 0.9375rem; font-weight: 600;
+      color: var(--navy); margin-bottom: 0.25rem;
+    }
+    .cap-item p { font-size: 0.8375rem; color: var(--muted); line-height: 1.65; }
+    .cap-right h2 { margin-bottom: 1.5rem; }
+    .cap-body { font-size: 0.9375rem; color: var(--muted); line-height: 1.8; margin-bottom: 1.5rem; }
+    .highlight-box {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 var(--r-md) var(--r-md) 0;
+      padding: 1.5rem 1.75rem;
+      margin-top: 2rem;
+    }
+    .highlight-box p {
+      font-family: var(--font-display);
+      font-size: 0.9375rem; font-style: italic;
+      color: var(--body); line-height: 1.7;
+    }
+
+    /* ── SECTORS ─────────────────────────────────────────────── */
+    #sectors { background: var(--navy); border-top: 1px solid rgba(255,255,255,0.04); }
+    #sectors .section-label { color: var(--steel-light); }
+    #sectors h2 { color: var(--white); }
+    #sectors .section-lead { color: rgba(255,255,255,0.45); }
+    .sectors-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--r-md);
+      overflow: hidden;
+    }
+    .sector-cell {
+      background: rgba(255,255,255,0.02);
+      padding: 1.75rem 1.5rem;
+      transition: background 0.2s;
+    }
+    .sector-cell:hover { background: rgba(74,144,164,0.12); }
+    .sector-icon {
+      width: 36px; height: 36px;
+      border-radius: var(--r-sm);
+      background: rgba(74,144,164,0.15);
+      border: 1px solid rgba(74,144,164,0.2);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .sector-icon svg { width: 17px; height: 17px; color: var(--steel-light); }
+    .sector-cell h4 {
+      font-family: var(--font-display);
+      font-size: 0.875rem; font-weight: 600;
+      color: rgba(255,255,255,0.85); line-height: 1.35;
+    }
+
+    /* ── APPROACH ────────────────────────────────────────────── */
+    #approach { background: var(--paper); border-top: 1px solid var(--rule); }
+    .approach-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .approach-card {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: var(--r-md);
+      padding: 2rem 1.75rem;
+      box-shadow: var(--shadow-xs);
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .approach-card:hover {
+      box-shadow: var(--shadow-sm);
+      border-color: var(--steel-line);
+    }
+    .approach-step {
+      font-size: 0.625rem; font-weight: 700;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--steel); margin-bottom: 1rem;
+    }
+    .approach-card h3 {
+      font-family: var(--font-display);
+      font-size: 1rem; font-weight: 600;
+      color: var(--navy); margin-bottom: 0.625rem;
+    }
+    .approach-card p { font-size: 0.8375rem; color: var(--muted); line-height: 1.7; }
+
+    /* ── FAQ ─────────────────────────────────────────────────── */
+    #faq { background: var(--white); border-top: 1px solid var(--rule); }
+    .faq-wrap { display: grid; grid-template-columns: 1fr 2fr; gap: clamp(3rem, 6vw, 6rem); align-items: start; }
+    .faq-intro h2 { margin-bottom: 1rem; }
+    .faq-intro p { font-size: 0.9375rem; color: var(--muted); line-height: 1.75; }
+    .faq-list { display: flex; flex-direction: column; gap: 0; }
+    .faq-item {
+      border-bottom: 1px solid var(--rule);
+    }
+    .faq-item:first-child { border-top: 1px solid var(--rule); }
+    .faq-item[open] {}
+    .faq-item summary {
+      cursor: pointer; list-style: none;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1.25rem; padding: 1.25rem 0;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary h3 {
+      font-family: var(--font-display);
+      font-size: 0.9375rem; font-weight: 600;
+      color: var(--navy);
+    }
+    .faq-icon {
+      width: 18px; height: 18px; flex-shrink: 0;
+      color: var(--steel);
+      transition: transform 0.25s var(--ease);
+    }
+    .faq-item[open] .faq-icon { transform: rotate(45deg); }
+    .faq-answer {
+      padding: 0 0 1.25rem;
+      font-size: 0.875rem; color: var(--muted);
+      line-height: 1.75; max-width: 600px;
+    }
+
+    /* ── CONTACT ─────────────────────────────────────────────── */
+    #contact { background: var(--paper); border-top: 1px solid var(--rule); }
+    .contact-wrap {
+      display: grid; grid-template-columns: 1fr 1.1fr;
+      gap: clamp(3rem, 6vw, 6rem); align-items: start;
+    }
+    .contact-info h2 { margin-bottom: 1rem; }
+    .contact-info > p { color: var(--muted); font-size: 0.9375rem; line-height: 1.8; margin-bottom: 2.5rem; }
+    .contact-detail {
+      display: flex; align-items: flex-start;
+      gap: 0.875rem; margin-bottom: 1.125rem;
+    }
+    .contact-detail svg { width: 16px; height: 16px; color: var(--steel); flex-shrink: 0; margin-top: 4px; }
+    .contact-detail span { font-size: 0.875rem; color: var(--muted); line-height: 1.55; }
+    .contact-form {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: var(--r-lg);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-sm);
+      display: flex; flex-direction: column; gap: 1.25rem;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .field { display: flex; flex-direction: column; gap: 0.375rem; }
+    label { font-size: 0.8rem; font-weight: 500; color: var(--body); }
+    input, textarea, select {
+      background: var(--paper);
+      border: 1px solid var(--rule-dark);
+      border-radius: var(--r-sm);
+      padding: 0.75rem 1rem;
+      color: var(--ink); font: inherit;
+      font-size: 0.9rem; outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    input:focus, textarea:focus, select:focus {
+      border-color: var(--steel);
+      box-shadow: 0 0 0 3px rgba(74,144,164,0.12);
+    }
+    input::placeholder, textarea::placeholder { color: var(--faint); }
+    textarea { resize: vertical; min-height: 110px; }
+    select { appearance: none; cursor: pointer; }
+
+    /* ── FOOTER ──────────────────────────────────────────────── */
+    footer {
+      background: var(--navy-deep);
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding: 4rem clamp(1.5rem, 5vw, 4rem) 2.5rem;
+    }
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem; max-width: 1160px;
+      margin: 0 auto 3rem;
+    }
+    .footer-brand h3 {
+      font-family: var(--font-display);
+      font-size: 1.25rem; font-weight: 700;
+      letter-spacing: -0.01em; color: var(--white);
+      margin-bottom: 0.875rem;
+    }
+    .footer-brand p { font-size: 0.85rem; color: rgba(255,255,255,0.38); line-height: 1.75; max-width: 280px; }
+    .footer-col h4 {
+      font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: rgba(255,255,255,0.3); margin-bottom: 1.25rem;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+    .footer-col ul a { font-size: 0.85rem; color: rgba(255,255,255,0.5); transition: color 0.2s; }
+    .footer-col ul a:hover { color: var(--steel-light); }
+    .footer-bottom {
+      max-width: 1160px; margin: 0 auto;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-bottom p { font-size: 0.78rem; color: rgba(255,255,255,0.28); }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { font-size: 0.78rem; color: rgba(255,255,255,0.3); transition: color 0.2s; }
+    .footer-links a:hover { color: rgba(255,255,255,0.6); }
+
+    /* ── ANIMATIONS ──────────────────────────────────────────── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { opacity: 0; animation: fadeUp 0.6s var(--ease) forwards; }
+    .fade-up.d1 { animation-delay: 0.1s; }
+    .fade-up.d2 { animation-delay: 0.22s; }
+    .fade-up.d3 { animation-delay: 0.36s; }
+    .fade-up.d4 { animation-delay: 0.5s; }
+
+    /* ── RESPONSIVE ──────────────────────────────────────────── */
+    @media (max-width: 1080px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .sectors-grid  { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 960px) {
+      .about-grid, .cap-grid, .contact-wrap { grid-template-columns: 1fr; }
+      .about-visual { position: static; }
+      .approach-row { grid-template-columns: 1fr 1fr; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+      .faq-wrap { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 680px) {
+      .nav-links { display: none; }
+      .nav-links.open {
+        display: flex; flex-direction: column;
+        position: fixed; top: 68px; left: 0; right: 0;
+        background: var(--white); padding: 2rem 1.5rem;
+        gap: 1.5rem; border-bottom: 1px solid var(--rule);
+        box-shadow: var(--shadow-md);
+      }
+      .nav-toggle { display: flex; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; }
+      .trust-strip { flex-direction: column; gap: 1.5rem; }
+      .trust-item + .trust-item { border-left: none; border-top: 1px solid var(--rule-dark); padding-top: 1.5rem; }
+      .approach-row { grid-template-columns: 1fr; }
+      .sectors-grid { grid-template-columns: repeat(2, 1fr); }
+      .services-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .btn-group { flex-direction: column; align-items: flex-start; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+    :focus-visible { outline: 2px solid var(--steel); outline-offset: 3px; border-radius: var(--r-sm); }
   </style>
 </head>
 <body>
+
 <a class="skip-link" href="#main">Skip to main content</a>
 
+<!-- NAV -->
 <nav role="navigation" aria-label="Primary">
   <a href="/" class="nav-logo" aria-label="Civentrax home">
-    <span class="lm" aria-hidden="true">
-      <svg viewBox="0 0 18 18" fill="none"><circle cx="9" cy="4" r="2" fill="white"/><circle cx="14.5" cy="13" r="2" fill="white"/><circle cx="3.5" cy="13" r="2" fill="white"/><line x1="9" y1="6" x2="14.5" y2="11" stroke="white" stroke-width="1.4" stroke-opacity=".7"/><line x1="9" y1="6" x2="3.5" y2="11" stroke="white" stroke-width="1.4" stroke-opacity=".7"/><line x1="14.5" y1="13" x2="3.5" y2="13" stroke="white" stroke-width="1.4" stroke-opacity=".7"/></svg>
+    <span class="logo-mark" aria-hidden="true">
+      <svg viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="9.5" cy="4"   r="2.3" fill="#4A90A4"/>
+        <circle cx="16"  cy="15"  r="2.3" fill="#4A90A4"/>
+        <circle cx="3"   cy="15"  r="2.3" fill="#4A90A4"/>
+        <line x1="9.5" y1="6.3" x2="16"  y2="12.7" stroke="#4A90A4" stroke-width="1.3" stroke-opacity="0.7"/>
+        <line x1="9.5" y1="6.3" x2="3"   y2="12.7" stroke="#4A90A4" stroke-width="1.3" stroke-opacity="0.7"/>
+        <line x1="16"  y1="15"  x2="3"   y2="15"   stroke="#4A90A4" stroke-width="1.3" stroke-opacity="0.7"/>
+      </svg>
     </span>
     Civentrax
   </a>
   <ul class="nav-links" id="nav-links" role="list">
-    <li><a href="#story">Our Story</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#capabilities">Capabilities</a></li>
     <li><a href="#sectors">Sectors</a></li>
-    <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+    <li><a href="#contact" class="nav-cta">Contact Us</a></li>
   </ul>
   <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links" onclick="toggleNav(this)">
     <span></span><span></span><span></span>
@@ -272,380 +726,558 @@
 
 <main id="main">
 
-<!-- HERO -->
-<section id="hero" aria-label="Introduction">
-  <div class="hero-bg" aria-hidden="true"></div>
-  <div class="hero-inner">
-    <div class="badge fu">
-      <span class="badge-dot"></span>
-      Pune, India · Government &amp; Enterprise Advisory
-    </div>
-    <h1 class="fu d1">Where Civic Systems<br/>Meet <em>Enterprise Intelligence</em></h1>
-    <p class="hero-sub fu d2">Civentrax partners with central, state, and local governments, public sector undertakings, and private enterprises to design, implement, and manage complex technology and infrastructure programmes.</p>
-    <div class="btn-group fu d3">
-      <a href="#services" class="btn-p">
-        Explore Services
-        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M2.5 7.5h10M8.5 4l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <a href="#contact" class="btn-g">Talk to Us</a>
-    </div>
-  </div>
-</section>
-
-<!-- MARQUEE -->
-<div class="mq-wrap" aria-hidden="true">
-  <div class="mq-track">
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Smart Cities</span><span class="mq-sep">·</span>
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>AI &amp; Analytics</span><span class="mq-sep">·</span>
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/></svg>GIS &amp; Spatial</span><span class="mq-sep">·</span>
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Digital Transformation</span><span class="mq-sep">·</span>
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Enterprise Software</span><span class="mq-sep">·</span>
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Cloud Computing</span><span class="mq-sep">·</span>
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M3 12h3M18 12h3M12 3v3M12 18v3"/></svg>IoT &amp; Infrastructure</span><span class="mq-sep">·</span>
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Cybersecurity</span><span class="mq-sep">·</span>
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Program Management</span><span class="mq-sep">·</span>
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Smart Cities</span><span class="mq-sep">·</span>
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>AI &amp; Analytics</span><span class="mq-sep">·</span>
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/></svg>GIS &amp; Spatial</span><span class="mq-sep">·</span>
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Digital Transformation</span><span class="mq-sep">·</span>
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Enterprise Software</span><span class="mq-sep">·</span>
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Cloud Computing</span><span class="mq-sep">·</span>
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M3 12h3M18 12h3M12 3v3M12 18v3"/></svg>IoT &amp; Infrastructure</span><span class="mq-sep">·</span>
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Cybersecurity</span><span class="mq-sep">·</span>
-    <span class="mq-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Program Management</span><span class="mq-sep">·</span>
-  </div>
-</div>
-
-<!-- TRUST -->
-<div class="trust-strip" role="region" aria-label="Company credentials">
-  <div class="ti"><span class="tn">Govt.</span><span class="tl">Public Sector Focus</span></div>
-  <div class="ti"><span class="tn">10+</span><span class="tl">Practice Areas</span></div>
-  <div class="ti"><span class="tn">LLP</span><span class="tl">India Registered</span></div>
-  <div class="ti"><span class="tn">Pune</span><span class="tl">Headquarters</span></div>
-</div>
-
-<!-- STORY -->
-<section id="story" aria-label="Our story">
-  <div class="mx sg">
-    <div>
-      <p class="sl">The Civentrax Story</p>
-      <h2>Built to Bridge Governance and Technology</h2>
-      <p style="color:var(--wdim);font-size:1rem;line-height:1.75;max-width:480px;font-weight:300;margin-top:.5rem;">
-        India's public sector is undergoing its most significant technology transformation in a generation — from e-governance and Smart Cities to AI-driven public services and GIS-based urban planning. Civentrax was established to be the dedicated advisory partner for this transformation.
+  <!-- HERO -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="eyebrow fade-up">Government Advisory &amp; Technology Consulting</p>
+      <h1 class="fade-up d1">
+        Advisory that moves<br/>
+        <strong>from strategy</strong><br/>
+        <em>to delivery.</em>
+      </h1>
+      <p class="hero-sub fade-up d2">
+        Civentrax partners with central, state, and local government bodies, public sector undertakings, and enterprises — providing consultancy, technology execution, and program management across India's most consequential sectors.
       </p>
-      <p style="color:var(--wdim);font-size:.9rem;line-height:1.75;max-width:480px;font-weight:300;margin-top:1rem;">
-        Incorporated as a Limited Liability Partnership in Pune, Maharashtra under the LLP Act 2008, Civentrax combines on-ground government project experience with deep technology expertise — providing end-to-end support from DPR preparation to programme implementation.
+      <div class="btn-group fade-up d3">
+        <a href="#services" class="btn-primary">
+          Our Services
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M7.5 2.5l4.5 4.5-4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-inner">
+      <!-- duplicated for seamless loop -->
+      <span class="marquee-item"><span class="marquee-dot"></span>Government Advisory</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Smart Cities</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>DPR Preparation</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Bid Advisory</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>AI &amp; Analytics</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>GIS &amp; Spatial</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>IoT Infrastructure</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Digital Transformation</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Cloud Computing</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Program Management</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Capacity Building</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Government Advisory</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Smart Cities</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>DPR Preparation</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Bid Advisory</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>AI &amp; Analytics</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>GIS &amp; Spatial</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>IoT Infrastructure</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Digital Transformation</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Cloud Computing</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Program Management</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Capacity Building</span>
+    </div>
+  </div>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-strip" role="region" aria-label="Firm credentials">
+    <div class="trust-item">
+      <span class="trust-num">LLP</span>
+      <span class="trust-label">Registered in India</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-num">Pune</span>
+      <span class="trust-label">Maharashtra, India</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-num">8+</span>
+      <span class="trust-label">Service Domains</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-num">Gov.</span>
+      <span class="trust-label">Central · State · Local</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" aria-label="About Civentrax">
+    <div class="max-w about-grid">
+      <!-- Abstract visual -->
+      <div class="about-visual" aria-hidden="true">
+        <svg viewBox="0 0 420 525" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="420" height="525" fill="#111D35"/>
+          <defs>
+            <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+              <circle cx="1" cy="1" r="0.8" fill="rgba(255,255,255,0.06)"/>
+            </pattern>
+            <radialGradient id="glow2" cx="55%" cy="42%" r="48%">
+              <stop offset="0%" stop-color="#4A90A4" stop-opacity="0.22"/>
+              <stop offset="100%" stop-color="#4A90A4" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="420" height="525" fill="url(#dots)"/>
+          <ellipse cx="230" cy="220" rx="200" ry="200" fill="url(#glow2)"/>
+          <!-- Central -->
+          <circle cx="210" cy="220" r="20" fill="#4A90A4" opacity="0.9"/>
+          <circle cx="210" cy="220" r="32" fill="none" stroke="#4A90A4" stroke-width="1" opacity="0.25"/>
+          <circle cx="210" cy="220" r="52" fill="none" stroke="#4A90A4" stroke-width="0.5" opacity="0.1"/>
+          <!-- Nodes -->
+          <circle cx="90"  cy="110" r="11" fill="#4A90A4" opacity="0.7"/>
+          <circle cx="340" cy="105" r="11" fill="#4A90A4" opacity="0.7"/>
+          <circle cx="355" cy="335" r="11" fill="#4A90A4" opacity="0.7"/>
+          <circle cx="65"  cy="345" r="11" fill="#4A90A4" opacity="0.7"/>
+          <circle cx="175" cy="68"  r="7" fill="#A8CCD4" opacity="0.5"/>
+          <circle cx="295" cy="410" r="7" fill="#A8CCD4" opacity="0.5"/>
+          <!-- Lines -->
+          <line x1="210" y1="220" x2="90"  y2="110" stroke="#A8CCD4" stroke-width="1.1" opacity="0.2"/>
+          <line x1="210" y1="220" x2="340" y2="105" stroke="#A8CCD4" stroke-width="1.1" opacity="0.2"/>
+          <line x1="210" y1="220" x2="355" y2="335" stroke="#A8CCD4" stroke-width="1.1" opacity="0.2"/>
+          <line x1="210" y1="220" x2="65"  y2="345" stroke="#A8CCD4" stroke-width="1.1" opacity="0.2"/>
+          <line x1="210" y1="220" x2="175" y2="68"  stroke="#A8CCD4" stroke-width="0.8" opacity="0.12"/>
+          <line x1="210" y1="220" x2="295" y2="410" stroke="#A8CCD4" stroke-width="0.8" opacity="0.12"/>
+          <line x1="90"  y1="110" x2="340" y2="105" stroke="#A8CCD4" stroke-width="0.6" opacity="0.08"/>
+          <line x1="340" y1="105" x2="355" y2="335" stroke="#A8CCD4" stroke-width="0.6" opacity="0.08"/>
+          <line x1="355" y1="335" x2="65"  y2="345" stroke="#A8CCD4" stroke-width="0.6" opacity="0.08"/>
+          <line x1="65"  y1="345" x2="90"  y2="110" stroke="#A8CCD4" stroke-width="0.6" opacity="0.08"/>
+          <!-- Label -->
+          <text x="210" y="492" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="rgba(168,204,212,0.35)" letter-spacing="5">CIVENTRAX · PUNE · INDIA</text>
+        </svg>
+      </div>
+
+      <div class="about-text">
+        <p class="section-label">About Civentrax</p>
+        <h2>Built for <strong>Government.</strong><br/>Engineered for <strong>Impact.</strong></h2>
+        <p class="main-object">
+          To carry on the business of providing consultancy, advisory, management, technical, operational, and strategic services in the fields of government projects, public sector initiatives, digital transformation, information technology, infrastructure, urban development, smart cities, artificial intelligence, data analytics, and program management.
+        </p>
+        <p class="about-body">
+          Civentrax is a Pune-registered advisory LLP formed under the Limited Liability Partnership Act, 2008. We serve central, state, and local government bodies, public sector undertakings, private organisations, and institutions across India's fastest-growing sectors.
+        </p>
+        <p class="about-body">
+          Our mandate is clear: take organisations from policy to implementation with rigour, domain depth, and a team that knows India's regulatory and procurement landscape from the inside.
+        </p>
+        <span class="reg-note">
+          <span class="reg-dot"></span>
+          LLP Registered · Pune, Maharashtra, India · LLP Act, 2008
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" aria-label="Our services">
+    <div class="max-w">
+      <div class="services-header">
+        <div>
+          <p class="section-label">What We Do</p>
+          <h2>Eight Practice Areas.<br/><strong>One Integrated Firm.</strong></h2>
+        </div>
+        <p class="section-lead">
+          Every mandate draws on multiple practices — we staff and lead across all of them from day one.
+        </p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <p class="card-num">01</p>
+          <h3>Government &amp; Public Sector Advisory</h3>
+          <p>Strategic and operational advisory for central, state, and local government bodies, PSUs, and public agencies — from policy design to program delivery.</p>
+        </div>
+
+        <div class="service-card">
+          <p class="card-num">02</p>
+          <h3>DPR, RFP &amp; Bid Advisory</h3>
+          <p>Preparation of Detailed Project Reports, feasibility studies, Request for Proposals, tender documents, and end-to-end bid advisory and implementation support.</p>
+        </div>
+
+        <div class="service-card">
+          <p class="card-num">03</p>
+          <h3>Smart Cities &amp; Urban Infrastructure</h3>
+          <p>Integrated platforms for mobility, utilities, surveillance, public safety, environmental monitoring, and urban governance — designed with city operations teams.</p>
+        </div>
+
+        <div class="service-card">
+          <p class="card-num">04</p>
+          <h3>AI, Data Analytics &amp; Automation</h3>
+          <p>Applied AI, machine learning, predictive analytics, and intelligent automation — built to production, integrated into operations, not alongside them.</p>
+        </div>
+
+        <div class="service-card">
+          <p class="card-num">05</p>
+          <h3>IT, Software &amp; System Integration</h3>
+          <p>Software development, ERP integration, digitisation, cybersecurity, and system integration for government and enterprise environments.</p>
+        </div>
+
+        <div class="service-card">
+          <p class="card-num">06</p>
+          <h3>GIS &amp; Spatial Intelligence</h3>
+          <p>Geospatial analytics, mapping platforms, and location intelligence for utilities, municipalities, infrastructure planning, and natural resources.</p>
+        </div>
+
+        <div class="service-card">
+          <p class="card-num">07</p>
+          <h3>IoT &amp; Cloud Infrastructure</h3>
+          <p>Sensor networks, edge computing, cloud architecture, and real-time data platforms connecting physical infrastructure to enterprise decision systems.</p>
+        </div>
+
+        <div class="service-card">
+          <p class="card-num">08</p>
+          <h3>Training, Capacity Building &amp; Manpower</h3>
+          <p>Workshops, skill development programs, and staffing services for government bodies, institutions, and organisations undergoing transformation.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section id="capabilities" aria-label="Our capabilities">
+    <div class="max-w cap-grid">
+      <div>
+        <p class="section-label">Capabilities</p>
+        <h2>What sets<br/><strong>Civentrax apart.</strong></h2>
+        <ul class="cap-list">
+          <li class="cap-item">
+            <span class="cap-num">01</span>
+            <div>
+              <h4>Deep government domain knowledge</h4>
+              <p>We understand India's procurement systems, policy frameworks, and public sector operations — not as outsiders, but as practitioners.</p>
+            </div>
+          </li>
+          <li class="cap-item">
+            <span class="cap-num">02</span>
+            <div>
+              <h4>End-to-end delivery</h4>
+              <p>From DPR to commissioning — we don't hand over reports and leave. We stay through implementation, integration, and go-live.</p>
+            </div>
+          </li>
+          <li class="cap-item">
+            <span class="cap-num">03</span>
+            <div>
+              <h4>Research, PoCs &amp; Innovation</h4>
+              <p>We undertake pilot projects, proof of concepts, and technology demonstrations — giving clients evidence before commitment.</p>
+            </div>
+          </li>
+          <li class="cap-item">
+            <span class="cap-num">04</span>
+            <div>
+              <h4>Strategic alliances &amp; partnerships</h4>
+              <p>We facilitate market entry, stakeholder coordination, JVs, and collaborations with government authorities and technology partners.</p>
+            </div>
+          </li>
+          <li class="cap-item">
+            <span class="cap-num">05</span>
+            <div>
+              <h4>Independent consultants &amp; specialists</h4>
+              <p>We engage domain experts, technical specialists, and legal advisors on project basis — bringing the right expertise to every mandate.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="cap-right">
+        <p class="section-label">Our Commitment</p>
+        <h2>Strategy that<br/><strong>earns trust.</strong></h2>
+        <p class="cap-body">
+          Civentrax conducts its business in a lawful, ethical, and professional manner. All intellectual property — methodologies, reports, proposals, strategies, and documentation — created for or by the firm remains proprietary, protecting client interests at every stage.
+        </p>
+        <p class="cap-body">
+          Engagements begin with structured discovery. We understand your constraints, your data landscape, and your stakeholders before we recommend a single tool, vendor, or architecture. Our advice is independent — not driven by product relationships.
+        </p>
+        <div class="highlight-box">
+          <p>
+            "The gap between enterprise strategy and technical execution is where most transformations fail. We bridge it by fielding mixed teams — advisors who understand procurement and engineers who can implement — under a single engagement structure."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTORS -->
+  <section id="sectors" aria-label="Sectors we serve">
+    <div class="max-w">
+      <p class="section-label">Sectors</p>
+      <h2>Where we work.</h2>
+      <p class="section-lead">
+        Serving government bodies, PSUs, municipal corporations, utilities, and industrial enterprises across India and beyond.
       </p>
-      <div class="tl-wrap">
-        <div class="tli"><span class="tly">Stage&nbsp;1</span><div class="tlc"><h4>Advisory &amp; Strategy</h4><p>Bid advisory, DPR preparation, feasibility studies, RFP drafting, and stakeholder engagement for government and PSU clients.</p></div></div>
-        <div class="tli"><span class="tly">Stage&nbsp;2</span><div class="tlc"><h4>Technology &amp; Integration</h4><p>IT implementation, software development, digitisation, cloud migration, cybersecurity, and AI/analytics deployments.</p></div></div>
-        <div class="tli"><span class="tly">Stage&nbsp;3</span><div class="tlc"><h4>Operations &amp; Capacity Building</h4><p>Training, staffing, operational support, and capacity-building programmes for government departments and institutions.</p></div></div>
-        <div class="tli"><span class="tly">Stage&nbsp;4</span><div class="tlc"><h4>Partnerships &amp; Ecosystem</h4><p>Strategic alliances, JVs, MoUs, and collaborations with technology companies, industry bodies, and international organisations.</p></div></div>
+      <div class="sectors-grid">
+
+        <div class="sector-cell">
+          <div class="sector-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          </div>
+          <h4>Smart Cities &amp; Urban Planning</h4>
+        </div>
+
+        <div class="sector-cell">
+          <div class="sector-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h4>Government &amp; Public Sector</h4>
+        </div>
+
+        <div class="sector-cell">
+          <div class="sector-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h4>Energy &amp; Utilities</h4>
+        </div>
+
+        <div class="sector-cell">
+          <div class="sector-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73L12 2 4 6.27A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73L12 22l8-4.27A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <h4>Manufacturing &amp; Industry</h4>
+        </div>
+
+        <div class="sector-cell">
+          <div class="sector-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/></svg>
+          </div>
+          <h4>GIS &amp; Natural Resources</h4>
+        </div>
+
+        <div class="sector-cell">
+          <div class="sector-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h4>Healthcare &amp; Life Sciences</h4>
+        </div>
+
+        <div class="sector-cell">
+          <div class="sector-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h4>Logistics &amp; Transportation</h4>
+        </div>
+
+        <div class="sector-cell">
+          <div class="sector-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Defence &amp; Public Safety</h4>
+        </div>
+
+        <div class="sector-cell">
+          <div class="sector-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h4>Financial Services</h4>
+        </div>
+
+        <div class="sector-cell">
+          <div class="sector-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h4>Telecommunications</h4>
+        </div>
+
       </div>
     </div>
-    <div class="sv" aria-hidden="true">
-      <svg viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="640" height="480" fill="#12152A"/>
-        <defs>
-          <pattern id="gd" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M 44 0 L 0 0 0 44" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/></pattern>
-          <radialGradient id="rg1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#6C63FF" stop-opacity=".28"/><stop offset="100%" stop-color="#6C63FF" stop-opacity="0"/></radialGradient>
-          <radialGradient id="rg2" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#9B59FF" stop-opacity=".22"/><stop offset="100%" stop-color="#9B59FF" stop-opacity="0"/></radialGradient>
-          <filter id="bl1"><feGaussianBlur stdDeviation="18"/></filter>
-          <filter id="bl2"><feGaussianBlur stdDeviation="10"/></filter>
-        </defs>
-        <rect width="640" height="480" fill="url(#gd)"/>
-        <ellipse cx="320" cy="240" rx="200" ry="160" fill="url(#rg1)" filter="url(#bl1)"/>
-        <ellipse cx="180" cy="340" rx="100" ry="80" fill="url(#rg2)" filter="url(#bl1)"/>
-        <circle cx="320" cy="240" r="22" fill="#6C63FF" opacity=".9"/>
-        <circle cx="320" cy="240" r="35" fill="none" stroke="#6C63FF" stroke-width="1" opacity=".3"/>
-        <circle cx="320" cy="240" r="52" fill="none" stroke="#6C63FF" stroke-width=".5" opacity=".12"/>
-        <circle cx="320" cy="240" r="22" fill="#6C63FF" opacity=".2" filter="url(#bl2)"/>
-        <circle cx="155" cy="135" r="12" fill="#9B59FF" opacity=".85"/>
-        <circle cx="498" cy="120" r="12" fill="#9B59FF" opacity=".85"/>
-        <circle cx="520" cy="355" r="12" fill="#9B59FF" opacity=".85"/>
-        <circle cx="118" cy="370" r="12" fill="#9B59FF" opacity=".85"/>
-        <circle cx="245" cy="70"  r="8"  fill="#F0B429" opacity=".7"/>
-        <circle cx="430" cy="405" r="8"  fill="#F0B429" opacity=".7"/>
-        <circle cx="550" cy="220" r="7"  fill="#6C63FF" opacity=".6"/>
-        <circle cx="80"  cy="240" r="7"  fill="#6C63FF" opacity=".6"/>
-        <line x1="320" y1="240" x2="155" y2="135" stroke="#6C63FF" stroke-width="1.5" opacity=".4"/>
-        <line x1="320" y1="240" x2="498" y2="120" stroke="#6C63FF" stroke-width="1.5" opacity=".4"/>
-        <line x1="320" y1="240" x2="520" y2="355" stroke="#6C63FF" stroke-width="1.5" opacity=".4"/>
-        <line x1="320" y1="240" x2="118" y2="370" stroke="#6C63FF" stroke-width="1.5" opacity=".4"/>
-        <line x1="320" y1="240" x2="245" y2="70"  stroke="#9B59FF" stroke-width="1"   opacity=".3"/>
-        <line x1="320" y1="240" x2="430" y2="405" stroke="#9B59FF" stroke-width="1"   opacity=".3"/>
-        <line x1="320" y1="240" x2="550" y2="220" stroke="#9B59FF" stroke-width="1"   opacity=".25"/>
-        <line x1="320" y1="240" x2="80"  y2="240" stroke="#9B59FF" stroke-width="1"   opacity=".25"/>
-        <line x1="155" y1="135" x2="498" y2="120" stroke="#6C63FF" stroke-width=".7" opacity=".15"/>
-        <line x1="498" y1="120" x2="520" y2="355" stroke="#6C63FF" stroke-width=".7" opacity=".15"/>
-        <line x1="520" y1="355" x2="118" y2="370" stroke="#6C63FF" stroke-width=".7" opacity=".15"/>
-        <line x1="118" y1="370" x2="155" y2="135" stroke="#6C63FF" stroke-width=".7" opacity=".15"/>
-        <text x="320" y="456" text-anchor="middle" font-family="Syne,sans-serif" font-size="10" fill="rgba(108,99,255,0.45)" letter-spacing="5">CIVENTRAX · NETWORK</text>
-      </svg>
+  </section>
+
+  <!-- APPROACH -->
+  <section id="approach" aria-label="How we work">
+    <div class="max-w">
+      <p class="section-label">How We Work</p>
+      <h2>A rigorous<br/><strong>engagement model.</strong></h2>
+      <p class="section-lead">Six phases. Clear ownership. Outcomes defined at the start.</p>
+      <div class="approach-row">
+        <div class="approach-card">
+          <p class="approach-step">Phase 01</p>
+          <h3>Discovery &amp; Scoping</h3>
+          <p>Structured interviews, policy reviews, data audits, and stakeholder mapping. We learn your environment — regulatory, technical, and political — before recommending anything.</p>
+        </div>
+        <div class="approach-card">
+          <p class="approach-step">Phase 02</p>
+          <h3>Strategy &amp; DPR</h3>
+          <p>Roadmaps, Detailed Project Reports, feasibility studies, and RFPs tied to outcomes — not technology trends. You get options, trade-offs, and a clear recommended path.</p>
+        </div>
+        <div class="approach-card">
+          <p class="approach-step">Phase 03</p>
+          <h3>Architecture &amp; Design</h3>
+          <p>Technology selection, system integration design, and security architecture — built for your team to own and operate independently after engagement close.</p>
+        </div>
+        <div class="approach-card">
+          <p class="approach-step">Phase 04</p>
+          <h3>Build &amp; Integrate</h3>
+          <p>Agile delivery with embedded QA. Mixed teams of Civentrax specialists and your staff — knowledge transfer built in from day one, not handed over at the end.</p>
+        </div>
+        <div class="approach-card">
+          <p class="approach-step">Phase 05</p>
+          <h3>Deploy &amp; Commission</h3>
+          <p>Production deployment, monitoring setup, user training, and performance validation. We don't hand over a report and walk away.</p>
+        </div>
+        <div class="approach-card">
+          <p class="approach-step">Phase 06</p>
+          <h3>Operate &amp; Evolve</h3>
+          <p>Ongoing advisory, managed services, or capacity building — depending on what your organisation needs after go-live.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SERVICES -->
-<section id="services" aria-label="Our services">
-  <div class="mx">
-    <p class="sl">Core Services</p>
-    <h2>What We Deliver</h2>
-    <p class="slead">From strategy through to systems integration and operational support — built for the complexity of government and enterprise projects in India.</p>
-    <div class="sg2">
-
-      <div class="sc">
-        <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg></div>
-        <h3>Government Advisory &amp; Program Management</h3>
-        <p>Strategic advisory for central, state, and local government bodies. Bid support, DPR preparation, RFP drafting, tender management, and programme implementation for public sector initiatives.</p>
-        <span class="ctag">Public Sector</span>
+  <!-- FAQ -->
+  <section id="faq" aria-label="FAQ">
+    <div class="max-w faq-wrap">
+      <div class="faq-intro">
+        <p class="section-label">FAQ</p>
+        <h2>Common questions.</h2>
+        <p>Straight answers before you reach out.</p>
       </div>
-
-      <div class="sc">
-        <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
-        <h3>Smart Cities &amp; Urban Infrastructure</h3>
-        <p>Planning, design, and implementation of smart city platforms covering mobility, utilities, public safety, environmental monitoring, and integrated command and control systems.</p>
-        <span class="ctag">Urban Tech</span>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>
+            <h3>What types of clients does Civentrax serve?</h3>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </summary>
+          <p class="faq-answer">Central, state, and local government bodies, public sector undertakings, municipal corporations, private enterprises, and institutions — particularly where the work touches public infrastructure, digital governance, or technology implementation.</p>
+        </details>
+        <details class="faq-item">
+          <summary>
+            <h3>Do you prepare DPRs and RFPs?</h3>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </summary>
+          <p class="faq-answer">Yes — this is a core service. We prepare Detailed Project Reports, feasibility studies, RFPs, tender documents, and provide bid advisory and implementation support for government and enterprise projects.</p>
+        </details>
+        <details class="faq-item">
+          <summary>
+            <h3>How do engagements typically begin?</h3>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </summary>
+          <p class="faq-answer">With structured discovery — not a proposal template. We spend time understanding your constraints, regulatory context, data landscape, and team before recommending a single tool, vendor, or architecture.</p>
+        </details>
+        <details class="faq-item">
+          <summary>
+            <h3>Do you work alongside our internal team?</h3>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </summary>
+          <p class="faq-answer">Yes. Our model pairs Civentrax specialists with your staff throughout delivery — knowledge transfer is built into the engagement structure, not handed over as documentation at close.</p>
+        </details>
+        <details class="faq-item">
+          <summary>
+            <h3>Can Civentrax facilitate partnerships and joint ventures?</h3>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </summary>
+          <p class="faq-answer">Yes. We provide market entry strategy, partnership facilitation, stakeholder coordination, and advisory services for companies and institutions entering government or public sector projects in India.</p>
+        </details>
       </div>
-
-      <div class="sc">
-        <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
-        <h3>AI, Data Analytics &amp; Automation</h3>
-        <p>Applied AI implementations, predictive analytics, process automation, and data governance frameworks for government agencies and enterprises handling complex public datasets.</p>
-        <span class="ctag">AI &amp; ML</span>
-      </div>
-
-      <div class="sc">
-        <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-        <h3>Digital Transformation</h3>
-        <p>End-to-end digitisation of government services and enterprise operations — from legacy system modernisation and e-governance platforms to citizen-facing digital interfaces.</p>
-        <span class="ctag">Digitisation</span>
-      </div>
-
-      <div class="sc">
-        <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M17 17h.01M14 17h.01M17 14h.01"/></svg></div>
-        <h3>IT Systems &amp; Integration</h3>
-        <p>System integration, enterprise software implementation, cloud computing, cybersecurity architecture, and IT-enabled service delivery for government and private sector clients.</p>
-        <span class="ctag">Enterprise IT</span>
-      </div>
-
-      <div class="sc">
-        <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg></div>
-        <h3>GIS &amp; Spatial Intelligence</h3>
-        <p>Geospatial analytics, mapping platforms, and location intelligence for infrastructure planning, urban development, utilities management, and environmental systems.</p>
-        <span class="ctag">Geospatial</span>
-      </div>
-
-      <div class="sc">
-        <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M3 12h3M18 12h3M12 3v3M12 18v3"/></svg></div>
-        <h3>IoT &amp; Connected Infrastructure</h3>
-        <p>Sensor networks, edge computing, device management, and real-time data ingestion for public infrastructure monitoring, industrial automation, and smart utility systems.</p>
-        <span class="ctag">IoT</span>
-      </div>
-
-      <div class="sc">
-        <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Manpower, Training &amp; Capacity Building</h3>
-        <p>Staffing, outsourcing, and HR services alongside structured training programmes, workshops, and skill development initiatives for government departments and institutions.</p>
-        <span class="ctag">People &amp; Skills</span>
-      </div>
-
-      <div class="sc">
-        <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73L12 2 4 6.27A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73L12 22l8-4.27A2 2 0 0 0 21 16z"/></svg></div>
-        <h3>Supply, Procurement &amp; Distribution</h3>
-        <p>Trading, supply chain management, procurement advisory, and distribution of hardware, software, consumables, and technical equipment across government and enterprise projects.</p>
-        <span class="ctag">Supply Chain</span>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CAPABILITIES -->
-<section id="capabilities" aria-label="Our capabilities">
-  <div class="mx">
-    <p class="sl">Full Scope</p>
-    <h2>Detailed Capabilities</h2>
-    <p class="slead">Every engagement type Civentrax is structured and authorised to undertake.</p>
-    <div class="capg">
-      <div class="cap"><span class="capn">01</span><div><h4>Government Project Advisory</h4><p>Consultancy and implementation support for central, state, and local government bodies; PSUs; private organisations; and institutions across all project lifecycle stages.</p></div></div>
-      <div class="cap"><span class="capn">02</span><div><h4>DPR, Feasibility &amp; Bid Advisory</h4><p>Detailed Project Reports, feasibility studies, RFPs, tender documents, bid advisory reports, and project implementation frameworks prepared to government standards.</p></div></div>
-      <div class="cap"><span class="capn">03</span><div><h4>IT, Cloud &amp; Cybersecurity</h4><p>Software development, system integration, digitisation, cloud computing architecture, cybersecurity strategy, AI implementation, and IT-enabled service delivery.</p></div></div>
-      <div class="cap"><span class="capn">04</span><div><h4>Market Entry &amp; Partnership Facilitation</h4><p>Market entry strategy, opportunity identification, stakeholder coordination, and advisory for companies participating in government and public sector projects in India.</p></div></div>
-      <div class="cap"><span class="capn">05</span><div><h4>Urban &amp; Infrastructure Projects</h4><p>Consultancy and execution for smart cities, urban infrastructure, mobility, surveillance, environmental systems, utilities management, and public governance platforms.</p></div></div>
-      <div class="cap"><span class="capn">06</span><div><h4>Training &amp; Skill Development</h4><p>Training programmes, seminars, awareness campaigns, and capacity-building for government bodies, educational institutions, private organisations, and PSUs.</p></div></div>
-      <div class="cap"><span class="capn">07</span><div><h4>Staffing &amp; HR Services</h4><p>Manpower supply, staffing, outsourcing, and recruitment services — including specialist technical placement for IT and infrastructure projects.</p></div></div>
-      <div class="cap"><span class="capn">08</span><div><h4>R&amp;D, PoC &amp; Innovation</h4><p>Research initiatives, pilot projects, proof-of-concept implementations, technology demonstrations, and experimental programmes for government and private clients.</p></div></div>
-      <div class="cap"><span class="capn">09</span><div><h4>Strategic Alliances &amp; JVs</h4><p>Lawful collaborations, strategic alliances, joint ventures, MoUs, and agreements with individuals, firms, companies, institutions, and government authorities.</p></div></div>
-      <div class="cap"><span class="capn">10</span><div><h4>Trade, Supply &amp; Distribution</h4><p>Trading, importing, exporting, and distributing products, equipment, consumables, software, hardware, systems, and materials for project delivery.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- WHO WE ARE -->
-<section id="who-we-are" aria-label="Who we are">
-  <div class="mx wg">
-    <div>
-      <p class="sl">Who We Are</p>
-      <h2>Experts Across Government, Technology, and Infrastructure</h2>
-      <p style="color:var(--wdim);font-size:1rem;line-height:1.75;font-weight:300;max-width:480px;margin-top:.5rem;">
-        Civentrax is a Pune-based Limited Liability Partnership bringing together consultants, technologists, and domain specialists with hands-on experience in government projects, urban development, and enterprise technology.
-      </p>
-      <ul class="plist">
-        <li class="pi">
-          <span class="pck" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-          <div><h4>Professional consultants with real delivery experience</h4><p>Our team brings verifiable expertise across governance, IT systems, infrastructure, urban planning, and programme management — not generalist advisory.</p></div>
-        </li>
-        <li class="pi">
-          <span class="pck" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-          <div><h4>Legally structured for public sector work</h4><p>Incorporated under the LLP Act 2008, Civentrax operates under formal governance, confidentiality obligations, and transparent financial practices aligned with government procurement standards.</p></div>
-        </li>
-        <li class="pi">
-          <span class="pck" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-          <div><h4>Committed to ethical and confidential operations</h4><p>Client information, financial data, and strategic materials are protected under formal confidentiality obligations. All business is conducted in a lawful, ethical, and professional manner.</p></div>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <p class="sl">Our Mandate</p>
-      <h2 style="font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:1rem;">Empowering organisations to thrive in dynamic, complex environments.</h2>
-      <p style="color:var(--wdim);font-size:.9375rem;line-height:1.75;font-weight:300;margin-bottom:2rem;">
-        Technology should serve as a catalyst for growth, not a barrier. Civentrax equips government bodies, PSUs, and private organisations with the tools, strategies, and execution capacity to lead in their sectors — whether winning a complex government bid, implementing a smart city platform, or digitising a legacy public service.
-      </p>
-      <p class="sl" style="margin-top:2rem;">Intellectual Property</p>
-      <p style="color:var(--wdim);font-size:.875rem;line-height:1.7;margin-top:.75rem;font-weight:300;">
-        All methodologies, reports, proposals, presentations, software, branding materials, strategies, and documentation created for or by Civentrax remain the sole property of the firm — ensuring consistent, high-quality delivery across every engagement.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- SECTORS -->
-<section id="sectors" aria-label="Sectors we serve">
-  <div class="mx">
-    <p class="sl">Sectors</p>
-    <h2>Who We Serve</h2>
-    <p class="slead">Civentrax serves government bodies, PSUs, and private sector organisations across these verticals.</p>
-    <div class="srow" role="list">
-      <span class="sp" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Central Government</span>
-      <span class="sp" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>State &amp; Local Govt.</span>
-      <span class="sp" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Public Sector Undertakings</span>
-      <span class="sp" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>Smart City SPVs</span>
-      <span class="sp" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Healthcare &amp; Public Health</span>
-      <span class="sp" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Logistics &amp; Transport</span>
-      <span class="sp" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Defence &amp; Public Safety</span>
-      <span class="sp" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/></svg>Infrastructure &amp; Urban Dev.</span>
-      <span class="sp" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73L12 2 4 6.27A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73L12 22l8-4.27A2 2 0 0 0 21 16z"/></svg>Manufacturing &amp; Industry</span>
-      <span class="sp" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>Education &amp; Skill Dev.</span>
-      <span class="sp" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Financial Services</span>
-    </div>
-  </div>
-</section>
-
-<!-- APPROACH -->
-<section id="approach" aria-label="Our approach">
-  <div class="mx">
-    <p class="sl">How We Work</p>
-    <h2>A Six-Stage Engagement Model</h2>
-    <p class="slead">Structured from discovery to operations — every stage with clear ownership and defined outputs.</p>
-    <div class="apg">
-      <div class="apc" data-n="01"><p class="apn">STAGE 01</p><h3>Discovery &amp; Scoping</h3><p>Structured intake sessions, stakeholder mapping, and requirements analysis. We understand the regulatory environment, procurement history, and technical constraints before recommending anything.</p></div>
-      <div class="apc" data-n="02"><p class="apn">STAGE 02</p><h3>Feasibility &amp; DPR</h3><p>Detailed Project Reports, feasibility studies, and business cases prepared to government standards. Options, trade-offs, and a recommended path — documented and defensible.</p></div>
-      <div class="apc" data-n="03"><p class="apn">STAGE 03</p><h3>Bid Advisory &amp; Procurement</h3><p>RFP drafting, tender documents, evaluation frameworks, and implementation support through the bid and award process for government and PSU procurement.</p></div>
-      <div class="apc" data-n="04"><p class="apn">STAGE 04</p><h3>Implementation &amp; Integration</h3><p>Project management, technology deployment, system integration, and vendor coordination — with Civentrax teams embedded alongside your own for knowledge transfer from day one.</p></div>
-      <div class="apc" data-n="05"><p class="apn">STAGE 05</p><h3>Training &amp; Handover</h3><p>Structured training, capacity-building workshops, documentation, and a formal handover process ensuring your team can operate and extend the systems built together.</p></div>
-      <div class="apc" data-n="06"><p class="apn">STAGE 06</p><h3>Operate &amp; Evolve</h3><p>Ongoing advisory, managed services, staffing support, or programme management retainers — depending on what your organisation needs to sustain and grow the outcome.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- BAND -->
-<div class="band" role="region" aria-label="Mission statement">
-  <blockquote>"Technology should serve as a <em>catalyst for growth</em>, not a barrier. We align innovation with the real-world constraints of government and enterprise delivery."</blockquote>
-  <cite>Civentrax Advisory LLP · Pune, Maharashtra · Incorporated under LLP Act 2008</cite>
-</div>
-
-<!-- FAQ -->
-<section id="faq" aria-label="Frequently asked questions">
-  <div class="mx">
-    <p class="sl">FAQ</p>
-    <h2>Common Questions</h2>
-    <div class="flist">
-      <details class="fi"><summary><h3>What types of clients does Civentrax work with?</h3><svg class="fic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary><p class="fa">Central, state, and local government bodies; public sector undertakings; smart city SPVs; and private enterprises that work alongside or supply to the public sector. If your project involves government procurement, urban development, or public infrastructure, we are structured for it.</p></details>
-      <details class="fi"><summary><h3>Can Civentrax support us from bid stage through to implementation?</h3><svg class="fic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary><p class="fa">Yes. Our six-stage model covers the full lifecycle — from opportunity identification and DPR preparation through to RFP drafting, project management, implementation, training, and post-go-live support.</p></details>
-      <details class="fi"><summary><h3>Do you prepare DPRs and feasibility studies?</h3><svg class="fic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary><p class="fa">DPR preparation, feasibility studies, RFPs, tender documents, and bid advisory are core to our practice — prepared to government standards across urban development, IT, smart city, and infrastructure projects.</p></details>
-      <details class="fi"><summary><h3>Can Civentrax help a private company enter the government market?</h3><svg class="fic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary><p class="fa">Yes. We provide market entry strategy, stakeholder coordination, opportunity identification, and advisory for companies looking to participate in government projects — including navigating procurement, compliance, and partner identification.</p></details>
-      <details class="fi"><summary><h3>Do you handle staffing and manpower?</h3><svg class="fic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary><p class="fa">We provide manpower supply, outsourcing, staffing, and HR services — including specialist technical placement for IT and infrastructure projects. We also engage independent domain experts and advisors on retainer or project basis.</p></details>
-      <details class="fi"><summary><h3>What is Civentrax's legal structure?</h3><svg class="fic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary><p class="fa">Civentrax is incorporated as a Limited Liability Partnership under the LLP Act 2008, registered in Pune, Maharashtra. Disputes are resolved first through mutual discussion; if unresolved within 30 days, by arbitration under the Arbitration and Conciliation Act 1996 with Pune as seat. All engagements are governed by Indian law.</p></details>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" aria-label="Contact us">
-  <div class="mx cw">
-    <div class="cinfo">
-      <p class="sl">Contact</p>
-      <h2>Start a Conversation</h2>
-      <p>We respond within one business day. Tell us about your project — whether it's a government bid, a technology programme, or an urban infrastructure initiative — and we'll give you an honest assessment of how we can help.</p>
-      <div class="cd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Pune, Maharashtra, India</span></div>
-      <div class="cd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span><a href="mailto:info@civentrax.com" style="color:#A99BFF;">info@civentrax.com</a></span></div>
-      <div class="cd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><span>Civentrax Advisory LLP · LLP Act 2008 · India</span></div>
-    </div>
-    <form class="cf" aria-label="Contact form" onsubmit="handleSubmit(event)">
-      <div class="frow">
-        <div class="fld"><label for="fn">First name</label><input type="text" id="fn" name="fn" placeholder="Amit" autocomplete="given-name" required /></div>
-        <div class="fld"><label for="ln">Last name</label><input type="text" id="ln" name="ln" placeholder="Sharma" autocomplete="family-name" required /></div>
+  <!-- CONTACT -->
+  <section id="contact" aria-label="Contact">
+    <div class="max-w contact-wrap">
+      <div class="contact-info">
+        <p class="section-label">Contact</p>
+        <h2>Let's discuss<br/><strong>your mandate.</strong></h2>
+        <p>We respond within one business day — with a considered reply, not a brochure. Tell us what you're working on and we'll give you an honest assessment of how we can help.</p>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Pune, Maharashtra, India</span>
+        </div>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span><a href="mailto:info@civentrax.com" style="color:var(--steel);">info@civentrax.com</a></span>
+        </div>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Registered under LLP Act, 2008<br/>Dispute resolution: Pune, Maharashtra</span>
+        </div>
       </div>
-      <div class="fld"><label for="em">Work email</label><input type="email" id="em" name="em" placeholder="amit@organisation.in" autocomplete="email" required /></div>
-      <div class="fld"><label for="org">Organisation / Department</label><input type="text" id="org" name="org" placeholder="Ministry / Company / PSU" autocomplete="organization" /></div>
-      <div class="fld">
-        <label for="svc">Type of engagement</label>
-        <select id="svc" name="svc">
-          <option value="" disabled selected>Select</option>
-          <option>Government Advisory &amp; Program Management</option>
-          <option>Smart Cities &amp; Urban Infrastructure</option>
-          <option>AI, Data Analytics &amp; Automation</option>
-          <option>Digital Transformation</option>
-          <option>IT Systems &amp; Integration</option>
-          <option>GIS &amp; Spatial Intelligence</option>
-          <option>IoT &amp; Connected Infrastructure</option>
-          <option>DPR / Feasibility / Bid Advisory</option>
-          <option>Training &amp; Capacity Building</option>
-          <option>Staffing &amp; HR Services</option>
-          <option>Multiple / Not Sure</option>
-        </select>
-      </div>
-      <div class="fld"><label for="msg">Tell us about your project</label><textarea id="msg" name="msg" placeholder="Describe the project scope, timeline, or challenge — as brief or detailed as you like."></textarea></div>
-      <button type="submit" class="btn-p" style="width:100%;justify-content:center;" id="sbtn">
-        Send Message
-        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M2.5 7.5h10M8.5 4l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <p id="fmsg" role="alert" style="font-size:.875rem;text-align:center;display:none;color:#A99BFF;"></p>
-    </form>
-  </div>
-</section>
+
+      <form class="contact-form" aria-label="Contact form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="field">
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="fname" placeholder="First name" autocomplete="given-name" required />
+          </div>
+          <div class="field">
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lname" placeholder="Last name" autocomplete="family-name" required />
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Work email</label>
+          <input type="email" id="email" name="email" placeholder="you@organisation.in" autocomplete="email" required />
+        </div>
+        <div class="field">
+          <label for="org">Organisation / Department</label>
+          <input type="text" id="org" name="org" placeholder="Ministry / Department / Company" autocomplete="organization" />
+        </div>
+        <div class="field">
+          <label for="service">Area of interest</label>
+          <select id="service" name="service">
+            <option value="" disabled selected>Select a service domain</option>
+            <option>Government &amp; Public Sector Advisory</option>
+            <option>DPR / RFP / Bid Advisory</option>
+            <option>Smart Cities &amp; Urban Infrastructure</option>
+            <option>AI, Analytics &amp; Automation</option>
+            <option>IT, Software &amp; System Integration</option>
+            <option>GIS &amp; Spatial Intelligence</option>
+            <option>IoT &amp; Cloud Infrastructure</option>
+            <option>Training &amp; Capacity Building</option>
+            <option>Multiple / Not Sure</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Describe your requirement</label>
+          <textarea id="message" name="message" placeholder="Project brief, challenge, or question — as brief or detailed as you like."></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%; justify-content:center;" id="submit-btn">
+          Send Message
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M7.5 2.5l4.5 4.5-4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <p id="form-msg" role="alert" style="font-size:0.85rem; text-align:center; display:none;"></p>
+      </form>
+    </div>
+  </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer>
-  <div class="fi2">
-    <div class="fb">
-      <div class="fb-name">
-        <span class="lm" style="width:28px;height:28px;border-radius:7px;box-shadow:none;" aria-hidden="true">
-          <svg viewBox="0 0 18 18" fill="none" style="width:15px;height:15px;"><circle cx="9" cy="4" r="2" fill="white"/><circle cx="14.5" cy="13" r="2" fill="white"/><circle cx="3.5" cy="13" r="2" fill="white"/><line x1="9" y1="6" x2="14.5" y2="11" stroke="white" stroke-width="1.4" stroke-opacity=".7"/><line x1="9" y1="6" x2="3.5" y2="11" stroke="white" stroke-width="1.4" stroke-opacity=".7"/><line x1="14.5" y1="13" x2="3.5" y2="13" stroke="white" stroke-width="1.4" stroke-opacity=".7"/></svg>
-        </span>
-        Civentrax
-      </div>
-      <p>Advisory and technology consulting for government, public sector, smart cities, and enterprise. Incorporated in Pune, Maharashtra under the LLP Act 2008.</p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Civentrax</h3>
+      <p>Government advisory and technology consulting. Registered in Pune, Maharashtra under the LLP Act, 2008.</p>
     </div>
-    <div class="fc"><h4>Services</h4><ul><li><a href="#services">Government Advisory</a></li><li><a href="#services">Smart Cities</a></li><li><a href="#services">AI &amp; Analytics</a></li><li><a href="#services">Digital Transformation</a></li><li><a href="#services">GIS &amp; Spatial</a></li><li><a href="#services">IoT</a></li></ul></div>
-    <div class="fc"><h4>Company</h4><ul><li><a href="#story">Our Story</a></li><li><a href="#who-we-are">Who We Are</a></li><li><a href="#capabilities">Capabilities</a></li><li><a href="#sectors">Sectors</a></li><li><a href="#approach">Approach</a></li><li><a href="#faq">FAQ</a></li></ul></div>
-    <div class="fc"><h4>Connect</h4><ul><li><a href="#contact">Get in Touch</a></li><li><a href="mailto:info@civentrax.com">info@civentrax.com</a></li><li><a href="#" aria-label="LinkedIn">LinkedIn</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Government Advisory</a></li>
+        <li><a href="#services">DPR &amp; Bid Advisory</a></li>
+        <li><a href="#services">Smart Cities</a></li>
+        <li><a href="#services">AI &amp; Analytics</a></li>
+        <li><a href="#services">GIS &amp; Spatial</a></li>
+        <li><a href="#services">IoT &amp; Cloud</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Firm</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#capabilities">Capabilities</a></li>
+        <li><a href="#sectors">Sectors</a></li>
+        <li><a href="#approach">Our Approach</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="mailto:info@civentrax.com">info@civentrax.com</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="fb2">
-    <p>© 2026 Civentrax Advisory LLP · Pune, Maharashtra · Registered under the LLP Act 2008</p>
-    <div class="fl"><a href="#">Terms of Use</a><a href="#">Privacy Policy</a></div>
+  <div class="footer-bottom">
+    <p>© 2025 Civentrax LLP · Pune, Maharashtra, India · Registered under LLP Act, 2008</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+    </div>
   </div>
 </footer>
 
@@ -654,47 +1286,48 @@
     const links = document.getElementById('nav-links');
     const open = links.classList.toggle('open');
     btn.setAttribute('aria-expanded', open);
-    document.querySelectorAll('.nav-toggle span').forEach((s, i) => {
-      s.style.transform = open ? (i===0?'translateY(7px) rotate(45deg)':i===2?'translateY(-7px) rotate(-45deg)':'') : '';
-      if (i===1) s.style.opacity = open ? '0' : '';
-    });
   }
 
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.opacity = '1';
-        e.target.style.transform = 'translateY(0)';
-        obs.unobserve(e.target);
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.08, rootMargin: '0px 0px -36px 0px' });
+  }, { threshold: 0.07, rootMargin: '0px 0px -24px 0px' });
 
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    document.querySelectorAll('.sc,.apc,.tli,.fi,.cap').forEach((el, i) => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(18px)';
-      el.style.transition = `opacity .5s ease ${Math.min(i,8)*.055}s, transform .5s cubic-bezier(.22,1,.36,1) ${Math.min(i,8)*.055}s`;
-      obs.observe(el);
+  document.querySelectorAll('.service-card, .approach-card, .cap-item, .sector-cell, .faq-item').forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(14px)';
+    el.style.transition = `opacity 0.48s ease ${i * 0.035}s, transform 0.48s cubic-bezier(0.22,1,0.36,1) ${i * 0.035}s`;
+    observer.observe(el);
+  });
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.service-card,.approach-card,.cap-item,.sector-cell,.faq-item').forEach(el => {
+      el.style.opacity = '1'; el.style.transform = 'none'; el.style.transition = 'none';
     });
   }
 
   function handleSubmit(e) {
     e.preventDefault();
-    const btn = document.getElementById('sbtn');
-    const msg = document.getElementById('fmsg');
-    btn.innerHTML = 'Sending…';
-    btn.disabled = true;
+    const btn = document.getElementById('submit-btn');
+    const msg = document.getElementById('form-msg');
+    btn.textContent = 'Sending…'; btn.disabled = true;
     setTimeout(() => {
-      btn.innerHTML = 'Message Sent ✓';
-      btn.classList.add('ok');
+      btn.textContent = 'Message Sent ✓';
+      btn.classList.add('is-success');
       msg.textContent = "We'll be in touch within one business day.";
       msg.style.display = 'block';
+      msg.style.color = 'var(--steel)';
     }, 900);
   }
 
+  const nav = document.querySelector('nav');
   window.addEventListener('scroll', () => {
-    document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 60);
+    nav.classList.toggle('scrolled', window.scrollY > 60);
   }, { passive: true });
 </script>
 </body>

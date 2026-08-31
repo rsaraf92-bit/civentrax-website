@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Civentrax Government Advisory &amp; Technology Consulting</title>
+  <meta name="description" content="Civentrax provides eight integrated advisory services: government advisory, DPR and RFP preparation, smart cities, AI analytics, GIS, IoT, cloud infrastructure, and capacity building." />
+  <meta property="og:title" content="Services — Civentrax" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%231B2B4B'/%3E%3Crect x='7' y='13.5' width='18' height='2.5' rx='1.25' fill='%234A90A4'/%3E%3Crect x='7' y='16.5' width='18' height='2.5' rx='1.25' fill='%234A90A4' opacity='.6'/%3E%3Crect x='13.5' y='7' width='2.5' height='18' rx='1.25' fill='white' opacity='.85'/%3E%3Crect x='16.5' y='7' width='2.5' height='18' rx='1.25' fill='white' opacity='.55'/%3E%3Cpath d='M7 13.5 Q4 13.5 4 10 Q4 7 7 7 L11 7 L11 9 L7 9 Q6 9 6 10 Q6 11 7 11' fill='none' stroke='%234A90A4' stroke-width='1.8' stroke-linecap='round'/%3E%3Cpath d='M25 13.5 Q28 13.5 28 10 Q28 7 25 7 L21 7 L21 9 L25 9 Q26 9 26 10 Q26 11 25 11' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' opacity='.8'/%3E%3Cpath d='M7 16.5 Q4 16.5 4 20 Q4 23 7 23 L11 23 L11 21 L7 21 Q6 21 6 20 Q6 19 7 19' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' opacity='.8'/%3E%3Cpath d='M25 16.5 Q28 16.5 28 20 Q28 23 25 23 L21 23 L21 21 L25 21 Q26 21 26 20 Q26 19 25 19' fill='none' stroke='%234A90A4' stroke-width='1.8' stroke-linecap='round'/%3E%3Crect x='14' y='14' width='4' height='4' rx='1' fill='%234A90A4'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{--navy:#1B2B4B;--navy-deep:#111D35;--steel:#4A90A4;--steel-lt:#A8CCD4;--steel-dim:rgba(74,144,164,0.1);--steel-ln:rgba(74,144,164,0.22);--gold:#B8963E;--white:#FFFFFF;--paper:#F7F8FA;--rule:#DDE2EA;--rule-dk:#C4CDD8;--ink:#1B2B4B;--body:#3D4F66;--muted:#6B7A94;--faint:#9AA5B8;--font-serif:'Source Serif 4',Georgia,serif;--font-display:'Cormorant Garamond',Georgia,serif;--font-body:'Inter',system-ui,sans-serif;--r-sm:4px;--r-md:8px;--r-lg:16px;--ease:cubic-bezier(0.22,1,0.36,1);--sh-sm:0 2px 8px rgba(27,43,75,0.08);--sh-md:0 6px 24px rgba(27,43,75,0.1)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--white);color:var(--body);font-family:var(--font-body);font-size:16px;line-height:1.65;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit;cursor:pointer;border:none;background:none}
+
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(1.5rem,5vw,4rem);height:68px;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule);transition:box-shadow .3s}
+    nav.scrolled{box-shadow:0 2px 12px rgba(27,43,75,.09)}
+    .nav-logo{display:flex;align-items:center;gap:.7rem;font-family:var(--font-display);font-weight:700;font-size:1.5rem;letter-spacing:.12em;color:var(--navy);text-transform:uppercase}
+    .logo-mark{width:36px;height:36px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .logo-mark svg{width:32px;height:32px}
+    .nav-links{display:flex;align-items:center;gap:2.25rem;list-style:none}
+    .nav-links a{font-size:.8375rem;font-weight:500;color:var(--muted);letter-spacing:.01em;transition:color .2s}
+    .nav-links a:hover,.nav-links a.active{color:var(--navy)}
+    .nav-cta{padding:.5rem 1.25rem!important;background:var(--navy)!important;color:var(--white)!important;border-radius:var(--r-sm)!important;font-weight:600!important;transition:background .2s!important}
+    .nav-cta:hover{background:var(--steel)!important}
+    .nav-toggle{display:none;flex-direction:column;gap:5px;padding:6px}
+    .nav-toggle span{display:block;width:22px;height:2px;background:var(--navy);border-radius:1px}
+
+    .page-hero{padding:clamp(7rem,12vw,10rem) clamp(1.5rem,5vw,4rem) clamp(4rem,7vw,6rem);background:var(--navy-deep);position:relative;overflow:hidden}
+    .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 80% 50%,rgba(74,144,164,.14) 0%,transparent 65%);pointer-events:none}
+    .page-hero::after{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(-60deg,transparent 0,transparent 38px,rgba(255,255,255,.018) 38px,rgba(255,255,255,.018) 39px);pointer-events:none}
+    .page-hero-inner{position:relative;z-index:1;max-width:1160px;margin:0 auto}
+    .breadcrumb{display:flex;align-items:center;gap:.5rem;font-size:.75rem;color:rgba(255,255,255,.35);margin-bottom:1.5rem;letter-spacing:.06em}
+    .breadcrumb a{color:rgba(255,255,255,.35);transition:color .2s}
+    .breadcrumb a:hover{color:var(--steel-lt)}
+    .breadcrumb span{color:rgba(255,255,255,.2)}
+    .page-hero h1{font-family:var(--font-serif);font-size:clamp(2.2rem,4.5vw,3.75rem);font-weight:300;line-height:1.15;letter-spacing:-.015em;color:var(--white);margin-bottom:1.25rem}
+    .page-hero h1 strong{font-weight:700;display:block}
+    .page-hero-sub{font-size:1.0625rem;color:rgba(255,255,255,.5);max-width:560px;line-height:1.8;font-weight:300}
+
+    section{padding:clamp(4rem,8vw,7rem) clamp(1.5rem,5vw,4rem)}
+    .max-w{max-width:1160px;margin:0 auto}
+    .section-label{font-size:.6875rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--steel);margin-bottom:1rem}
+    h2{font-family:var(--font-serif);font-size:clamp(1.75rem,3vw,2.5rem);font-weight:400;letter-spacing:-.02em;line-height:1.22;color:var(--navy);margin-bottom:1rem}
+    h2 strong{font-weight:700}
+
+    /* SERVICE DETAIL CARDS */
+    .service-detail{display:grid;grid-template-columns:1fr 2fr;gap:clamp(3rem,5vw,5rem);padding:clamp(3rem,6vw,5rem) 0;border-bottom:1px solid var(--rule);align-items:start}
+    .service-detail:first-child{padding-top:0}
+    .service-detail:last-child{border-bottom:none}
+    .svc-meta{position:sticky;top:88px}
+    .svc-num{font-family:var(--font-body);font-size:.65rem;font-weight:700;letter-spacing:.2em;color:var(--steel);margin-bottom:1rem}
+    .svc-title{font-family:var(--font-serif);font-size:clamp(1.35rem,2vw,1.75rem);font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:1rem}
+    .svc-tag{display:inline-flex;align-items:center;gap:.4rem;font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--steel);background:var(--steel-dim);border:1px solid var(--steel-ln);border-radius:100px;padding:.3rem .875rem}
+    .svc-body p{font-size:.9375rem;color:var(--muted);line-height:1.85;margin-bottom:1.25rem}
+    .svc-body p:last-child{margin-bottom:0}
+    .svc-delivers{margin-top:2rem}
+    .svc-delivers-label{font-size:.65rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--navy);margin-bottom:1rem}
+    .delivers-grid{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+    .deliver-item{display:flex;align-items:flex-start;gap:.625rem;font-size:.8375rem;color:var(--body);line-height:1.5}
+    .deliver-dot{width:5px;height:5px;border-radius:50%;background:var(--steel);flex-shrink:0;margin-top:.45rem}
+
+    /* CTA BAND */
+    .cta-band{background:var(--navy);padding:clamp(4rem,7vw,6rem) clamp(1.5rem,5vw,4rem);text-align:center}
+    .cta-band h2{color:var(--white);margin-bottom:1rem}
+    .cta-band p{color:rgba(255,255,255,.5);font-size:1rem;line-height:1.75;margin-bottom:2.5rem;max-width:500px;margin-left:auto;margin-right:auto}
+    .btn-primary{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2rem;background:var(--steel);color:var(--white);font-weight:600;font-size:.875rem;border-radius:var(--r-sm);transition:background .2s,transform .15s var(--ease)}
+    .btn-primary:hover{background:#3a7d93;transform:translateY(-1px)}
+
+    footer{background:var(--navy-deep);border-top:1px solid rgba(255,255,255,.05);padding:4rem clamp(1.5rem,5vw,4rem) 2.5rem}
+    .footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;max-width:1160px;margin:0 auto 3rem}
+    .footer-brand h3{font-family:var(--font-display);font-size:1.5rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--white);margin-bottom:.875rem}
+    .footer-brand p{font-size:.85rem;color:rgba(255,255,255,.38);line-height:1.75;max-width:280px}
+    .footer-col h4{font-size:.65rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:1.25rem}
+    .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:.7rem}
+    .footer-col ul a{font-size:.85rem;color:rgba(255,255,255,.5);transition:color .2s}
+    .footer-col ul a:hover{color:var(--steel-lt)}
+    .footer-bottom{max-width:1160px;margin:0 auto;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+    .footer-bottom p{font-size:.78rem;color:rgba(255,255,255,.28)}
+    .footer-links{display:flex;gap:1.5rem}
+    .footer-links a{font-size:.78rem;color:rgba(255,255,255,.3);transition:color .2s}
+    .footer-links a:hover{color:rgba(255,255,255,.6)}
+
+    @media(max-width:860px){.service-detail{grid-template-columns:1fr}.svc-meta{position:static}.delivers-grid{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr 1fr}}
+    @media(max-width:680px){.nav-links{display:none}.nav-links.open{display:flex;flex-direction:column;position:fixed;top:68px;left:0;right:0;background:var(--white);padding:2rem 1.5rem;gap:1.5rem;border-bottom:1px solid var(--rule);box-shadow:var(--sh-md)}.nav-toggle{display:flex}.footer-inner{grid-template-columns:1fr}}
+    :focus-visible{outline:2px solid var(--steel);outline-offset:3px;border-radius:var(--r-sm)}
+  </style>
+</head>
+<body>
+
+<nav role="navigation" aria-label="Primary">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-mark" aria-hidden="true">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse rx="2.5" ry="6" fill="#4A90A4" opacity="0.18" transform="rotate(0)   translate(16,5)"/>
+        <ellipse rx="2.5" ry="6" fill="#4A90A4" opacity="0.18" transform="rotate(45)  translate(16,5)"/>
+        <ellipse rx="2.5" ry="6" fill="#4A90A4" opacity="0.18" transform="rotate(90)  translate(16,5)"/>
+        <ellipse rx="2.5" ry="6" fill="#4A90A4" opacity="0.18" transform="rotate(135) translate(16,5)"/>
+        <ellipse rx="2.5" ry="6" fill="#4A90A4" opacity="0.18" transform="rotate(180) translate(16,5)"/>
+        <ellipse rx="2.5" ry="6" fill="#4A90A4" opacity="0.18" transform="rotate(225) translate(16,5)"/>
+        <ellipse rx="2.5" ry="6" fill="#4A90A4" opacity="0.18" transform="rotate(270) translate(16,5)"/>
+        <ellipse rx="2.5" ry="6" fill="#4A90A4" opacity="0.18" transform="rotate(315) translate(16,5)"/>
+        <g stroke="#4A90A4" stroke-width="0.5" opacity="0.25" transform="translate(16,16)"><line x1="0" y1="-10" x2="0" y2="10"/><line x1="10" y1="0" x2="-10" y2="0"/><line x1="7" y1="-7" x2="-7" y2="7"/><line x1="-7" y1="-7" x2="7" y2="7"/></g>
+        <rect x="9" y="12.5" width="14" height="3" rx="1.5" fill="#4A90A4"/>
+        <rect x="9" y="16.5" width="14" height="3" rx="1.5" fill="#4A90A4" opacity="0.5"/>
+        <rect x="12.5" y="9" width="3" height="14" rx="1.5" fill="#FFFFFF" opacity="0.9"/>
+        <rect x="16.5" y="9" width="3" height="14" rx="1.5" fill="#FFFFFF" opacity="0.55"/>
+        <path d="M9,12.5 Q6,12.5 6,9.5 Q6,6.5 9,6.5 L12,6.5 L12,8.5 L9,8.5 Q8,8.5 8,9.5 Q8,10.5 9,10.5" fill="none" stroke="#4A90A4" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M23,12.5 Q26,12.5 26,9.5 Q26,6.5 23,6.5 L20,6.5 L20,8.5 L23,8.5 Q24,8.5 24,9.5 Q24,10.5 23,10.5" fill="none" stroke="white" stroke-width="1.4" stroke-linecap="round" opacity="0.8"/>
+        <path d="M9,19.5 Q6,19.5 6,22.5 Q6,25.5 9,25.5 L12,25.5 L12,23.5 L9,23.5 Q8,23.5 8,22.5 Q8,21.5 9,21.5" fill="none" stroke="white" stroke-width="1.4" stroke-linecap="round" opacity="0.8"/>
+        <path d="M23,19.5 Q26,19.5 26,22.5 Q26,25.5 23,25.5 L20,25.5 L20,23.5 L23,23.5 Q24,23.5 24,22.5 Q24,21.5 23,21.5" fill="none" stroke="#4A90A4" stroke-width="1.4" stroke-linecap="round"/>
+        <rect x="14.5" y="14.5" width="3" height="3" rx="0.75" fill="#4A90A4"/>
+      </svg>
+    </span>
+    Civentrax
+  </a>
+  <ul class="nav-links" id="nav-links" role="list">
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="index.html#capabilities">How We Work</a></li>
+    <li><a href="index.html#sectors">Sectors</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links" onclick="toggleNav(this)">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span>/</span>
+      <span style="color:rgba(255,255,255,.6)">Services</span>
+    </div>
+    <h1>Eight practice areas.<br/><strong>One integrated firm.</strong></h1>
+    <p class="page-hero-sub">Every mandate draws on multiple practices. We staff and lead across all of them under a single engagement structure — no hand-off gaps, no divided accountability.</p>
+  </div>
+</div>
+
+<main>
+<section>
+<div class="max-w">
+
+  <div class="service-detail" id="svc01">
+    <div class="svc-meta">
+      <p class="svc-num">01</p>
+      <h2 class="svc-title">Government &amp; Public Sector Advisory</h2>
+      <span class="svc-tag">Core Practice</span>
+    </div>
+    <div class="svc-body">
+      <p>Strategic and operational advisory for central, state, and local government bodies, public sector undertakings, and agencies. We work at the intersection of policy, administration, and technology — understanding that government mandates operate under constraints that private sector advisors frequently misread.</p>
+      <p>Our advisory covers the full policy-to-delivery spectrum: from helping bodies define what problem they are actually solving, to designing governance structures for major programs, to supporting procurement decisions with rigorous analysis. We understand India's regulatory frameworks, statutory timelines, financial delegation limits, and the political realities that determine which solutions are viable — not just technically correct.</p>
+      <p>We have worked with municipal corporations, development authorities, state departments, and central ministry programs. Our advisory is independent — we have no commercial arrangements with vendors or contractors that would bias our recommendations.</p>
+      <div class="svc-delivers">
+        <p class="svc-delivers-label">What we deliver</p>
+        <div class="delivers-grid">
+          <div class="deliver-item"><span class="deliver-dot"></span>Program strategy and governance design</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Stakeholder mapping and management plans</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Policy analysis and regulatory assessment</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Implementation roadmaps with KPIs</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Vendor and contractor evaluation frameworks</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Change management and transition planning</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-detail" id="svc02">
+    <div class="svc-meta">
+      <p class="svc-num">02</p>
+      <h2 class="svc-title">DPR, RFP &amp; Bid Advisory</h2>
+      <span class="svc-tag">High Demand</span>
+    </div>
+    <div class="svc-body">
+      <p>A Detailed Project Report or Request for Proposal is only valuable if it accurately defines the problem, reflects real constraints, and is written to attract competitive bids from qualified firms. A poorly written tender attracts one bid — or none. A poorly structured DPR commits resources to solving the wrong problem.</p>
+      <p>We prepare DPRs, feasibility studies, RFPs, and tender documents from first principles. We begin with the problem definition — what outcome the procuring body actually needs — and work backward to the specification. This produces documents that attract competitive bids, provide evaluators with clear criteria, and withstand audit scrutiny from the Comptroller and Auditor General, vigilance bodies, and internal audit functions.</p>
+      <p>We also provide bid advisory: supporting the procurement process from pre-bid queries through bid evaluation, contract negotiation, and award documentation.</p>
+      <div class="svc-delivers">
+        <p class="svc-delivers-label">What we deliver</p>
+        <div class="delivers-grid">
+          <div class="deliver-item"><span class="deliver-dot"></span>Detailed Project Reports (DPR)</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Feasibility studies and cost-benefit analysis</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Request for Proposals (RFP / RFQ / EOI)</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Tender documents and SoW preparation</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Bid evaluation frameworks and scoring matrices</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Pre-bid query management and corrigendum support</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-detail" id="svc03">
+    <div class="svc-meta">
+      <p class="svc-num">03</p>
+      <h2 class="svc-title">Smart Cities &amp; Urban Infrastructure</h2>
+      <span class="svc-tag">Specialisation</span>
+    </div>
+    <div class="svc-body">
+      <p>Integrated urban platforms for mobility, utilities, surveillance, public safety, environmental monitoring, and governance — designed with city operations teams, not around them. We have worked on Smart Cities Mission projects and understand the difference between technology deployed and technology actually used.</p>
+      <p>Our approach begins with city operations: who runs the system, who maintains it, what data they actually need to make decisions, and what institutional capacity exists. Technology architecture follows from operational requirements — not the reverse. This produces systems that city staff can operate independently after implementation, rather than systems that require continuous vendor support to function.</p>
+      <div class="svc-delivers">
+        <p class="svc-delivers-label">What we deliver</p>
+        <div class="delivers-grid">
+          <div class="deliver-item"><span class="deliver-dot"></span>Integrated Command and Control Centre (ICCC) advisory</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Urban mobility and traffic management systems</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Public safety and surveillance architecture</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Smart utilities — water, waste, energy monitoring</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Urban data platforms and citizen services</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Smart Cities Mission proposal preparation</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-detail" id="svc04">
+    <div class="svc-meta">
+      <p class="svc-num">04</p>
+      <h2 class="svc-title">AI, Analytics &amp; Automation</h2>
+      <span class="svc-tag">Growing Practice</span>
+    </div>
+    <div class="svc-body">
+      <p>Applied AI, predictive analytics, and intelligent automation built to production — not proof-of-concepts that demonstrate potential and go no further. We test assumptions before committing resources: a PoC or pilot first, full build only when the evidence supports it and the operational integration pathway is clear.</p>
+      <p>For government clients, AI applications must be explainable, auditable, and compliant with data governance requirements. We design AI systems accordingly — not as black boxes, but as tools that decision-makers can interrogate and rely on. We have experience with computer vision, natural language processing, predictive maintenance, demand forecasting, and anomaly detection across government and enterprise contexts.</p>
+      <div class="svc-delivers">
+        <p class="svc-delivers-label">What we deliver</p>
+        <div class="delivers-grid">
+          <div class="deliver-item"><span class="deliver-dot"></span>AI readiness assessment and strategy</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Machine learning model development and deployment</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Predictive analytics for operations and planning</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Natural language processing for document automation</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Process automation and workflow intelligence</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>AI governance and explainability frameworks</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-detail" id="svc05">
+    <div class="svc-meta">
+      <p class="svc-num">05</p>
+      <h2 class="svc-title">IT, Software &amp; System Integration</h2>
+      <span class="svc-tag">Core Practice</span>
+    </div>
+    <div class="svc-body">
+      <p>Software development, ERP integration, digitisation, cybersecurity, and system integration for government and enterprise environments. Our measure of success is not delivery of a system — it is whether your team can operate it independently after we leave. Knowledge transfer is built into every engagement, not handed over as documentation at close.</p>
+      <p>Government IT environments carry specific constraints: legacy system dependencies, interoperability requirements with NIC and state IT infrastructure, data localisation obligations, and procurement rules governing software licensing. We design within these constraints from the outset, not around them.</p>
+      <div class="svc-delivers">
+        <p class="svc-delivers-label">What we deliver</p>
+        <div class="delivers-grid">
+          <div class="deliver-item"><span class="deliver-dot"></span>Custom software development and delivery</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>ERP selection, implementation, and integration</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Legacy system modernisation and data migration</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Cybersecurity architecture and compliance</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>System integration and API design</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Digital transformation roadmap and execution</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-detail" id="svc06">
+    <div class="svc-meta">
+      <p class="svc-num">06</p>
+      <h2 class="svc-title">GIS &amp; Spatial Intelligence</h2>
+      <span class="svc-tag">Specialisation</span>
+    </div>
+    <div class="svc-body">
+      <p>Geospatial analytics, mapping platforms, and location intelligence for utilities, municipalities, infrastructure planning, land management, and natural resource governance. GIS is the foundational data layer for most urban and infrastructure programs — and most organisations significantly underuse the data they already have.</p>
+      <p>We design GIS platforms that integrate with operational systems — utilities management, asset tracking, planning approvals, field operations — so that spatial data becomes actionable, not just visual. Our work spans base map preparation, satellite and drone imagery integration, spatial analytics, and GIS-enabled decision dashboards.</p>
+      <div class="svc-delivers">
+        <p class="svc-delivers-label">What we deliver</p>
+        <div class="delivers-grid">
+          <div class="deliver-item"><span class="deliver-dot"></span>GIS platform design and implementation</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Spatial data acquisition and base map preparation</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Satellite and drone imagery integration</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Infrastructure and asset mapping</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>GIS-enabled planning and decision dashboards</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Location analytics and spatial modelling</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-detail" id="svc07">
+    <div class="svc-meta">
+      <p class="svc-num">07</p>
+      <h2 class="svc-title">IoT &amp; Cloud Infrastructure</h2>
+      <span class="svc-tag">Core Practice</span>
+    </div>
+    <div class="svc-body">
+      <p>Sensor networks, edge computing, cloud architecture, and real-time data platforms connecting physical infrastructure to enterprise decision systems. IoT deployments in government contexts require particular attention to data sovereignty, network resilience, device lifecycle management, and integration with existing operational technology — none of which can be retrofitted after deployment.</p>
+      <p>Our cloud architecture work covers multi-cloud environments across AWS, Azure, and GCP, with specific experience in GovCloud and NIC-compliant infrastructure requirements. We design for operational resilience — systems that continue to function under adverse conditions, not just under nominal load.</p>
+      <div class="svc-delivers">
+        <p class="svc-delivers-label">What we deliver</p>
+        <div class="delivers-grid">
+          <div class="deliver-item"><span class="deliver-dot"></span>IoT sensor network design and deployment</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Edge computing architecture</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Cloud migration strategy and execution</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Real-time data platform design</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>DevSecOps pipelines and infrastructure-as-code</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Device management and IoT security</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-detail" id="svc08">
+    <div class="svc-meta">
+      <p class="svc-num">08</p>
+      <h2 class="svc-title">Training, Capacity Building &amp; Manpower</h2>
+      <span class="svc-tag">Supporting Practice</span>
+    </div>
+    <div class="svc-body">
+      <p>Structured workshops, skill development programs, and staffing services for government bodies, institutions, and organisations undergoing digital and organisational transformation. Technology implementations fail at the adoption stage more often than the technical stage. Building the human capacity to use, maintain, and evolve systems is as important as the systems themselves.</p>
+      <p>Our capacity building programs are designed around the actual roles and workflows of the people who will operate systems — not generic training content. We also provide specialist manpower on project basis: domain experts, technical specialists, and program managers embedded in client teams for the duration of complex programs.</p>
+      <div class="svc-delivers">
+        <p class="svc-delivers-label">What we deliver</p>
+        <div class="delivers-grid">
+          <div class="deliver-item"><span class="deliver-dot"></span>Role-specific technology training programs</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Digital literacy and upskilling workshops</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Program management capacity building</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Specialist manpower and expert secondment</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Train-the-trainer programs for sustainable delivery</div>
+          <div class="deliver-item"><span class="deliver-dot"></span>Change management and adoption support</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<div class="cta-band">
+  <h2 style="color:var(--white)">Ready to discuss <strong style="color:var(--white)">your mandate?</strong></h2>
+  <p>We respond within one business day — with a considered reply, not a brochure. If we cannot help, we will say so.</p>
+  <a href="contact.html" class="btn-primary">
+    Get in Touch
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M7.5 2.5l4.5 4.5-4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Civentrax</h3>
+      <p>Government advisory and technology consulting. Structured thinking. Independent advice. End-to-end delivery.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#svc01">Government Advisory</a></li>
+        <li><a href="#svc02">DPR &amp; Bid Advisory</a></li>
+        <li><a href="#svc03">Smart Cities</a></li>
+        <li><a href="#svc04">AI &amp; Analytics</a></li>
+        <li><a href="#svc06">GIS &amp; Spatial</a></li>
+        <li><a href="#svc07">IoT &amp; Cloud</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Firm</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html#name">Our Name</a></li>
+        <li><a href="index.html#approach">Engagement Model</a></li>
+        <li><a href="index.html#sectors">Sectors</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="mailto:info@civentrax.com">info@civentrax.com</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Civentrax LLP · Pune, Maharashtra, India · LLP Act, 2008</p>
+    <div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+  </div>
+</footer>
+
+<script>
+  function toggleNav(btn) {
+    const links = document.getElementById('nav-links');
+    const open = links.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  }
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); }, { passive: true });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.05 });
+  document.querySelectorAll('.service-detail').forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(16px)';
+    el.style.transition = `opacity .5s ease ${i*.08}s, transform .5s cubic-bezier(0.22,1,0.36,1) ${i*.08}s`;
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
